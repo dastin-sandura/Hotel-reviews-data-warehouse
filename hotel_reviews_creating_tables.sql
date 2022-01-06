@@ -29,7 +29,7 @@ select count(1) from HotelReviews;
 
 CREATE TABLE Hotel(
 
-   hotel_id  int identity NOT NULL PRIMARY KEY,
+   hotel_id  int identity PRIMARY KEY,
 
    hotel_name varchar(310) NOT NULL,
 
@@ -40,7 +40,7 @@ GO
 
 CREATE TABLE StayDescription(
 
-   stay_description_id int NOT NULL PRIMARY KEY,
+   stay_description_id int identity PRIMARY KEY,
 
    length_of_stay varchar(255) NOT NULL,
 
@@ -56,7 +56,7 @@ GO
 
 CREATE TABLE CommentCharacteristic(
 
-   comment_characteristic_id int NOT NULL PRIMARY KEY,
+   comment_characteristic_id int identity PRIMARY KEY,
 
    total_positive_comments_word_count int NOT NULL, --max value 408, min 0
 
@@ -66,7 +66,9 @@ GO
 
 CREATE TABLE TimeDimension (
 
-   Review_Date date NOT NULL PRIMARY KEY,
+	time_id identity PRIMARY KEY,
+
+   Review_Date date NOT NULL,
 
    Day numeric(2) NOT NULL,
 
@@ -92,7 +94,7 @@ GO
 
 CREATE TABLE Reviewer(
 
-   reviewer_id int NOT NULL PRIMARY KEY,
+   reviewer_id int identity PRIMARY KEY,
 
    reviewer_nationality varchar(255) NOT NULL,
 
@@ -102,21 +104,43 @@ GO
 --- tabela faktow
 
 CREATE TABLE Hotel_Review(
-
-   hotel_id  PK FK int NOT NULL PRIMARY KEY,
-   stay_description_id PK FK ,
-   reviewer_id PK FK ,
-   reviewer_id PK FK , 
-   comment_characteristic_id PK FK , 
-   time_id PK FK , 
-   negative_comments_text(negative_review), 
-   positive_comments_text(positive_review), 
-   numerical_score(reviewer_score), 
-   upvotes_number(additional_number_of_scoring)
-
-   
-
+   hotel_id int NOT NULL,
+   stay_description_id int NOT NULL,
+   reviewer_id int NOT NULL,
+   reviewer_id int NOT NULL, 
+   comment_characteristic_id int NOT NULL, 
+   time_id int NOT NULL, 
+   negative_comments_text(negative_review) VARCHAR(255), 
+   positive_comments_text(positive_review) VARCHAR(255), 
+   numerical_score numeric NOT NULL,
+   upvotes_number numeric NOT NULL,
+   PRIMARY KEY(hotel_id, stay_description_id, reviewer_id, comment_characteristic_id,time_id)
 )
 GO
 
+-- adding constraints 
 
+ALTER TABLE Hotel_Review
+ADD CONSTRAINT fk_hotel
+FOREIGN KEY(hotel_id) REFERENCES Hotel
+GO
+
+ALTER TABLE Hotel_Review
+ADD CONSTRAINT fk_stay_description
+FOREIGN KEY(stay_description_id) REFERENCES StayDescription
+GO
+
+ALTER TABLE Hotel_Review
+ADD CONSTRAINT fk_reviewer
+FOREIGN KEY(reviewer_id) REFERENCES Reviewer
+GO
+
+ALTER TABLE Hotel_Review
+ADD CONSTRAINT fk_comment_characteristic
+FOREIGN KEY(comment_characteristic_id) REFERENCES CommentCharacteristic
+GO
+
+ALTER TABLE Hotel_Review
+ADD CONSTRAINT fk_time
+FOREIGN KEY(time_id) REFERENCES TimeDimension
+GO
