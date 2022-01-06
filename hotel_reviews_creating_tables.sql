@@ -64,27 +64,27 @@ CREATE TABLE CommentCharacteristic(
 )
 GO
 
-CREATE TABLE Time (
+CREATE TABLE TimeDimension (
 
    Review_Date date NOT NULL PRIMARY KEY,
 
-   Dzien numeric(2) NOT NULL,
+   Day numeric(2) NOT NULL,
 
-   Miesiac numeric(2) NOT NULL,
+   Month numeric(2) NOT NULL,
 
-   Kwartal numeric(1) NOT NULL,
+   Quarter numeric(1) NOT NULL,
 
-   Rok numeric(4) NOT NULL,
+   Year numeric(4) NOT NULL,
 
-   DzienTygodnia numeric(1) NOT NULL,
+   WeekDay numeric(1) NOT NULL,
 
-   NazwaMiesiacaPolska varchar(50) NOT NULL,
+   MonthNamePL varchar(50) NOT NULL,
 
-   NazwaMiesiacaAngielska varchar(50) NOT NULL,
+   MonthNameENG varchar(50) NOT NULL,
 
-   NazwaDniaTygodniaPolska varchar(50) NOT NULL,
+   WeekNamePL varchar(50) NOT NULL,
 
-   NazwaDniaTygodniaAngielska varchar(50) NOT NULL
+   WeekNameENG varchar(50) NOT NULL
 
 )
 
