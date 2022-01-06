@@ -29,7 +29,7 @@ select count(1) from HotelReviews;
 
 CREATE TABLE Hotel(
 
-   hotel_id int NOT NULL PRIMARY KEY,
+   hotel_id  int identity NOT NULL PRIMARY KEY,
 
    hotel_name varchar(310) NOT NULL,
 
