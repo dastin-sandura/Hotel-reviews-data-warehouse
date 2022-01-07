@@ -11,10 +11,24 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{2B4E1C8B-50D6-4CB2-AAC8-1E5B9973CE6D}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{0231E0C7-2033-46D0-A2F4-04947979D146}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BDE0FD6E-862A-4EB9-BEBA-765960F8C3C7}"
+      DTS:ObjectName="db-mssql16.pjwstk.edu.pl.S10523">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=S10523;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -70,11 +84,11 @@ FROM            Hotel</property>
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">2</property>
+                  typeConverter="AccessMode">3</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">true</property>
+                  name="FastLoadKeepIdentity">false</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
@@ -91,8 +105,8 @@ FROM            Hotel</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Insert unique pairs into Hotel dimension - OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
-                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -137,6 +151,10 @@ FROM            Hotel</property>
                       dataType="str"
                       length="255"
                       name="hotel_address" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Insert unique pairs into Hotel dimension - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotel_id]"
+                      dataType="i4"
+                      name="hotel_id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -216,8 +234,8 @@ FROM            Hotel</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
-                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -476,7 +494,7 @@ FROM            Hotel</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}"
+          SQLTask:Connection="{BDE0FD6E-862A-4EB9-BEBA-765960F8C3C7}"
           SQLTask:SqlStatementSource="truncate table Hotel;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
