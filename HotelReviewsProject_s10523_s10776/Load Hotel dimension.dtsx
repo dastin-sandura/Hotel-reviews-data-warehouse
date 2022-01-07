@@ -1,18 +1,18 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/6/2022 7:30:18 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LAB220-16"
   DTS:CreatorName="PJWSTK\s10523"
-  DTS:DTSID="{57DD2C8A-A443-43C1-ABF4-7B21E70CF4AB}"
+  DTS:DTSID="{6D9943E2-D0D0-4F84-9EEA-103E323F1886}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.167"
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
   DTS:VersionBuild="12"
-  DTS:VersionGUID="{0D6EC0F5-8489-45A9-BE99-04C11068FF72}">
+  DTS:VersionGUID="{72903BEE-9585-4A25-A321-3523A37B04BA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,7 +21,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{2261C3B9-3765-4967-A462-3EB7B338DAB2}"
+      DTS:DTSID="{74FC3A34-6423-494F-AB0E-9DF5C479F54B}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -91,8 +91,8 @@ FROM            Hotel</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Insert unique pairs into Hotel dimension - OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -216,8 +216,8 @@ FROM            Hotel</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -467,7 +467,7 @@ FROM            Hotel</property>
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{2EA64391-2CD4-4980-8FB0-58C97F7A9776}"
+      DTS:DTSID="{640ADA52-4972-4BE0-9E72-4F246E746F13}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -485,7 +485,7 @@ FROM            Hotel</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{DBFD86EC-1BDA-4E97-8454-6F37F0B2B160}"
+      DTS:DTSID="{7795AFE8-6674-44A2-9755-44077D16DF77}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
