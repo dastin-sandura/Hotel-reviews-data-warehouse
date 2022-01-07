@@ -58,9 +58,9 @@ CREATE TABLE CommentCharacteristic(
 
    comment_characteristic_id int identity PRIMARY KEY,
 
-   total_positive_comments_word_count int NOT NULL, --max value 408, min 0
+   total_positive_comments_word_count int, --max value 408, min 0
 
-   total_negative_comments_word_count int NOT NULL -- max 408 | min 0
+   total_negative_comments_word_count int -- max 408 | min 0
 )
 GO
 
@@ -96,7 +96,7 @@ CREATE TABLE Reviewer(
 
    reviewer_id int identity PRIMARY KEY,
 
-   reviewer_nationality varchar(255) NOT NULL,
+   reviewer_nationality varchar(255),
 
 )
 GO

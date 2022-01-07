@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{3DF437FB-BD7E-4812-9FC2-3038D3B2D469}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{C82DF4C3-E923-41BE-8CD9-65B4DA4D5E4A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -376,12 +376,12 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Data Flow Task\Read data from CSV Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1045"
-              name="Flat File Source"
+              name="Read data from CSV Flat File Source"
               usesDispositions="true"
               version="1">
               <properties>
@@ -396,25 +396,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Data Flow Task\Read data from CSV Flat File Source.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Hotel_Reviews.csv Flat File Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Hotel_Reviews.csv Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Address]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Address]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Address]"
                       length="100"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Address]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Address]"
                       name="Hotel_Address"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -429,12 +429,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Date]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Date]"
                       dataType="date"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Date]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Date]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Date]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Date]"
                       name="Review_Date"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -449,14 +449,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Name]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Name]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Name]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Name]"
                       length="310"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Name]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Name]"
                       name="Hotel_Name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -471,14 +471,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Nationality]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Nationality]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Nationality]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Nationality]"
                       length="260"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Nationality]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Nationality]"
                       name="Reviewer_Nationality"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -493,12 +493,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Negative_Word_Counts]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Negative_Word_Counts]"
                       dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Negative_Word_Counts]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Negative_Word_Counts]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Negative_Word_Counts]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Negative_Word_Counts]"
                       name="Review_Total_Negative_Word_Counts"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -513,12 +513,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Total_Number_of_Reviews]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Total_Number_of_Reviews]"
                       dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total_Number_of_Reviews]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Total_Number_of_Reviews]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total_Number_of_Reviews]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Total_Number_of_Reviews]"
                       name="Total_Number_of_Reviews"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -533,12 +533,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Positive_Word_Counts]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Positive_Word_Counts]"
                       dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Positive_Word_Counts]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Positive_Word_Counts]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Positive_Word_Counts]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Positive_Word_Counts]"
                       name="Review_Total_Positive_Word_Counts"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -553,14 +553,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Score]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Score]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Score]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Score]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Score]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Score]"
                       name="Reviewer_Score"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -575,14 +575,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Tags]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Tags]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tags]"
+                      externalMetadataColumnId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tags]"
                       length="300"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Tags]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Tags]"
                       name="Tags"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -600,89 +600,89 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Address]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
                       length="100"
                       name="Hotel_Address" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Additional_Number_of_Scoring]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Additional_Number_of_Scoring]"
                       dataType="i2"
                       name="Additional_Number_of_Scoring" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Date]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Date]"
                       dataType="date"
                       name="Review_Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Average_Score]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Average_Score]"
                       dataType="ui8"
                       name="Average_Score" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Name]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hotel_Name]"
                       codePage="1250"
                       dataType="str"
                       length="310"
                       name="Hotel_Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Nationality]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Nationality]"
                       codePage="1250"
                       dataType="str"
                       length="260"
                       name="Reviewer_Nationality" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Negative_Review]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Negative_Review]"
                       codePage="1250"
                       dataType="str"
                       length="5760"
                       name="Negative_Review" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Negative_Word_Counts]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Negative_Word_Counts]"
                       dataType="i2"
                       name="Review_Total_Negative_Word_Counts" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total_Number_of_Reviews]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total_Number_of_Reviews]"
                       dataType="i2"
                       name="Total_Number_of_Reviews" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Positive_Review]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Positive_Review]"
                       codePage="1250"
                       dataType="str"
                       length="5780"
                       name="Positive_Review" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Positive_Word_Counts]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Review_Total_Positive_Word_Counts]"
                       dataType="i2"
                       name="Review_Total_Positive_Word_Counts" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
                       dataType="decimal"
                       name="Total_Number_of_Reviews_Reviewer_Has_Given" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Score]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reviewer_Score]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="Reviewer_Score" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tags]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tags]"
                       codePage="1250"
                       dataType="str"
                       length="300"
                       name="Tags" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[days_since_review]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[days_since_review]"
                       codePage="1250"
                       dataType="str"
                       length="7"
                       name="days_since_review" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
                       codePage="1250"
                       dataType="str"
                       length="90"
                       name="lat" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lng]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lng]"
                       codePage="1250"
                       dataType="str"
                       length="90"
@@ -690,27 +690,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1250"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -719,11 +719,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="Write data to HotelReviews tables - OLE DB Destination"
               usesDispositions="true"
               version="4">
               <properties>
@@ -776,7 +776,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   connectionManagerRefId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   description="The OLE DB runtime connection used to access the database."
@@ -784,129 +784,129 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Hotel_Address]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Hotel_Address]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Hotel_Address"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Address]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Address]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Address]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Address]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Review_Date]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Review_Date]"
                       cachedDataType="date"
                       cachedName="Review_Date"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Date]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Date]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Date]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Date]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Hotel_Name]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Hotel_Name]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="310"
                       cachedName="Hotel_Name"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Name]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Name]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Name]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Hotel_Name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Reviewer_Nationality]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Reviewer_Nationality]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="260"
                       cachedName="Reviewer_Nationality"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Nationality]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Nationality]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Nationality]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Nationality]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Review_Total_Negative_Word_Counts]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Review_Total_Negative_Word_Counts]"
                       cachedDataType="i2"
                       cachedName="Review_Total_Negative_Word_Counts"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Negative_Word_Counts]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Negative_Word_Counts]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Total_Number_of_Reviews]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Total_Number_of_Reviews]"
                       cachedDataType="i2"
                       cachedName="Total_Number_of_Reviews"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Total_Number_of_Reviews]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Total_Number_of_Reviews]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Review_Total_Positive_Word_Counts]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Review_Total_Positive_Word_Counts]"
                       cachedDataType="i2"
                       cachedName="Review_Total_Positive_Word_Counts"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Positive_Word_Counts]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Review_Total_Positive_Word_Counts]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Reviewer_Score]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Reviewer_Score]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Reviewer_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Score]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Score]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Score]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Reviewer_Score]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Tags]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Tags]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="300"
                       cachedName="Tags"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tags]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Tags]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tags]"
+                      lineageId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output].Columns[Tags]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Address]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
                       length="100"
                       name="Hotel_Address" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Date]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Date]"
                       dataType="dbDate"
                       name="Review_Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Average_Score]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Average_Score]"
                       dataType="i4"
                       name="Average_Score" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Name]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hotel_Name]"
                       codePage="1250"
                       dataType="str"
                       length="310"
                       name="Hotel_Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Nationality]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Nationality]"
                       codePage="1250"
                       dataType="str"
                       length="260"
                       name="Reviewer_Nationality" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
                       dataType="i4"
                       name="Review_Total_Negative_Word_Counts" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews]"
                       dataType="i4"
                       name="Total_Number_of_Reviews" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
                       dataType="i4"
                       name="Review_Total_Positive_Word_Counts" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Score]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reviewer_Score]"
                       dataType="i4"
                       name="Reviewer_Score" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tags]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tags]"
                       codePage="1250"
                       dataType="str"
                       length="300"
                       name="Tags" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[days_since_review]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[days_since_review]"
                       dataType="i4"
                       name="days_since_review" />
                   </externalMetadataColumns>
@@ -914,22 +914,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -941,9 +941,9 @@
           <paths>
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\Read data from CSV Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1027,27 +1027,33 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="287.624995743856,10.299999511838" />
+          Size="341,42"
+          Id="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination"
+          TopLeft="151.624995743856,80.5999997210503" />
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="8.3749998603016,11.6999997907877" />
+          Size="249,42"
+          Id="Package\Data Flow Task\Read data from CSV Flat File Source"
+          TopLeft="8.37499986030161,28" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="159.374999860302,31.9999996513128">
+          TopLeft="257.374999860302,49">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="128.249995883554,0"
+              EndConnector="64.7499958835544,31.5999997210503"
               Start="0,0"
-              End="120.749995883554,0">
+              End="64.7499958835544,24.0999997210503">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="120.749995883554,0" />
+                    End="60.7499958835544,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="60.7499958835544,0"
+                    Point2="64.7499958835544,0"
+                    Point3="64.7499958835544,4" />
+                  <mssgle:LineSegment
+                    End="64.7499958835544,24.0999997210503" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1060,7 +1066,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\Write data to HotelReviews tables - OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
