@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/7/2022 1:39:37 PM"
@@ -11,10 +11,24 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Load CommentCharacteristic dimension"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{6DABBBE8-B16D-4EAC-A850-F17387D7E245}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{ABC1F0E4-3DB8-48B0-9E40-34070A5536C8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{68665A66-56BD-4CCD-8876-F954924B5B10}"
+      DTS:ObjectName="db-mssql16.pjwstk.edu.pl.S10523">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=S10523;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -69,7 +83,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -90,8 +104,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
-                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -211,8 +225,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
-                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -483,13 +497,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="163,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="12,6" />
-        <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
           TopLeft="20,74" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="12,6" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="94.5,48">
@@ -521,13 +535,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Data Flow Task\OLE DB Source"
-          TopLeft="24,7" />
-        <NodeLayout
           Size="98,42"
           Id="Package\Data Flow Task\Sort"
           TopLeft="54,80" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="24,7" />
         <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task\OLE DB Destination"
