@@ -66,7 +66,7 @@ GO
 
 CREATE TABLE TimeDimension (
 
-	time_id identity PRIMARY KEY,
+	time_id int identity PRIMARY KEY,
 
    Review_Date date NOT NULL,
 
