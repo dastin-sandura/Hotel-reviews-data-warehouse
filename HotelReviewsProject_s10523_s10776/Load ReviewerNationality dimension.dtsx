@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{388E6AD4-1DA9-4F38-8D56-2D615D72B666}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{E33A8092-AA43-4FA4-8FCB-645404F91CB1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -413,7 +413,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}"
-          SQLTask:SqlStatementSource="truncate table s10523.dbo.Reviewer;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table Reviewer;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>

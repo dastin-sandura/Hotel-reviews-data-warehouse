@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Load CommentCharacteristic dimension"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{6C5661B3-B454-46A3-B1A9-769E3DBDBBDC}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{775BC531-2F9F-4E39-A795-8B921B5893C3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -456,7 +456,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}"
-          SQLTask:SqlStatementSource="truncate table s10523.dbo.CommentCharacteristic;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table CommentCharacteristic;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>

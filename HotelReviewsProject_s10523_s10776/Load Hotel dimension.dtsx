@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{24EC5106-454D-42B9-B85C-AE2EFD309AA0}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{0D6EC0F5-8489-45A9-BE99-04C11068FF72}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -477,7 +477,7 @@ FROM            Hotel</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}"
-          SQLTask:SqlStatementSource="truncate table S10523.dbo.Hotel;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table Hotel;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
