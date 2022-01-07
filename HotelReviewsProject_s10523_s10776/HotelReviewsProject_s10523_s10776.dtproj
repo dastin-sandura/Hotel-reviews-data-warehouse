@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LAB220-12</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAczPbgWBc906j550B9/p12AAAAAACAAAAAAADZgAAwAAAABAAAAB7SsCKuIzfy6nJ++WLFwnSAAAAAASAAACgAAAAEAAAAMyH+m/DzEk1uMZll4A5mTaIAAAAko8GnWesc1Y8sDIEZFARVCeye75sXMzro7QDwyymuu1iPgKUCsZmtDYennMXG2bpMskhevIa+N5JURSsAYv8SWdmwi3uXIakz0/IirYCXhmUzcLRk3Aenks8C4i97WdOVaJnxpwsRDQgRrHL3IwbCHOfunCd5YIrLSFT2kVyaQ0Wq8P6w+jlARQAAAC3L9m+grEx6V/CNwb6WPXr/vJtIg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZliMFeLuCUqNjhh4/RO7MAAAAAACAAAAAAADZgAAwAAAABAAAADJHcGriAkZSfxXbvTUZTBxAAAAAASAAACgAAAAEAAAACUaYP62kqEJgOs22Ou77JWIAAAAv3YDkzkJexOP5U4czmMmbRJvCBzjFcBAEotcm28a+z8upci4n/nqF/QmKJX8YQ6dOVz4Nnb51w2wOhCP+6jSTGTWIaHXsUbwSRiezVrl6WjtPahXI/T9CKaxwcUV00H++W0qcxT+O/y00rCqQwn4Wlelx/MwgbJU5etiLNfZg4aEPQuXfyG5TRQAAABwErCrFvwhv19XQSsgFeQ+3KKu/g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -34,6 +34,9 @@
           <SSIS:Package SSIS:Name="HotelReviews.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="TimeDimension (1).dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="StayDescription.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Load Hotel dimension.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Load CommentCharacteristic dimension.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Load ReviewerNationality dimension.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="db-mssql16.pjwstk.edu.pl.S10776.conmgr" />
@@ -1953,6 +1956,57 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Load Hotel dimension.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{6D9943E2-D0D0-4F84-9EEA-103E323F1886}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{72903BEE-9585-4A25-A321-3523A37B04BA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Load CommentCharacteristic dimension.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{21525EBA-EDF5-420A-8746-EC2CE7D5697D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Load CommentCharacteristic dimension</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{6DABBBE8-B16D-4EAC-A850-F17387D7E245}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Load ReviewerNationality dimension.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{07D70CC0-61E4-4107-9ED2-4286D619CF09}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E95CA9D1-B28D-4FA0-800F-8B77FF65B70D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
