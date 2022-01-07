@@ -30,6 +30,6 @@ ELSE IF DATEPART(W, @data) = 5 SELECT @pnt = 'Czwartek', @ant ='Thursday'
 ELSE IF DATEPART(W, @data) = 6 SELECT @pnt = 'Piątek', @ant = 'Friday'
 ELSE SELECT @pnt = 'Sobota', @ant = 'Saturday'
 	
-	INSERT INTO Time VALUES(@data, DATEPART(DAY, @data), DATEPART(MM, @data),  DATEPART(QQ, @data),DATEPART(YEAR, @data), DATEPART(W, @data), @pnm, @anm, @pnt,@ant)
+	INSERT INTO TimeDimension VALUES(@data, DATEPART(DAY, @data), DATEPART(MM, @data),  DATEPART(QQ, @data),DATEPART(YEAR, @data), DATEPART(W, @data), @pnm, @anm, @pnt,@ant)
 	SELECT @korektor = @korektor + 1
 END

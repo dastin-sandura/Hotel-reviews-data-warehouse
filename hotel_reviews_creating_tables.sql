@@ -42,15 +42,15 @@ CREATE TABLE StayDescription(
 
    stay_description_id int identity PRIMARY KEY,
 
-   length_of_stay varchar(255) NOT NULL,
+   stay_length varchar(255),
 
-   type varchar(50) NULL
+   trip_category varchar(255),
    
-   guest_count
+   guest_category varchar(255),
    
-   room_type
+   room_type varchar(255),
    
-   posted_via_mobile
+   posted_via_mobile varchar(255)
 )
 GO
 
@@ -66,7 +66,7 @@ GO
 
 CREATE TABLE TimeDimension (
 
-	time_id identity PRIMARY KEY,
+	time_id int identity PRIMARY KEY,
 
    Review_Date date NOT NULL,
 
