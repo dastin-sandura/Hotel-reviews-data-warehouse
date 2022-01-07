@@ -1,18 +1,18 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/7/2022 1:39:37 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LAB220-16"
   DTS:CreatorName="PJWSTK\s10523"
-  DTS:DTSID="{783540EA-4F0B-4F42-893D-FCB8DF303E5A}"
+  DTS:DTSID="{21525EBA-EDF5-420A-8746-EC2CE7D5697D}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.167"
   DTS:LocaleID="1045"
   DTS:ObjectName="Load CommentCharacteristic dimension"
   DTS:PackageType="5"
   DTS:VersionBuild="6"
-  DTS:VersionGUID="{775BC531-2F9F-4E39-A795-8B921B5893C3}">
+  DTS:VersionGUID="{6DABBBE8-B16D-4EAC-A850-F17387D7E245}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,7 +21,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{6AFDE83C-DF33-4DB6-A6B8-62B4736ECAA4}"
+      DTS:DTSID="{C28E5ED7-A8FE-4289-9538-D52BF0EDF268}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -90,8 +90,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -211,8 +211,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
+                  connectionManagerRefId="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -446,7 +446,7 @@
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{B9AB2441-B71F-405A-9124-68ACA921496B}"
+      DTS:DTSID="{AB15276B-84FB-419C-BDAA-83B285460A0B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -464,7 +464,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{04810457-9530-4E14-87C3-4F7FF78A19E5}"
+      DTS:DTSID="{F46E27BB-F8AB-4D74-9F93-B946721AE36C}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
