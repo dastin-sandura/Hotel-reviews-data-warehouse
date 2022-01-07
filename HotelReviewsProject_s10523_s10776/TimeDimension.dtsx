@@ -1,25 +1,25 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/6/2022 7:13:05 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LAB120-08"
   DTS:CreatorName="PJWSTK\s10776"
-  DTS:DTSID="{BDA9FFD3-8AB5-469C-B8D8-1681EF849A4C}"
+  DTS:DTSID="{44BCB63C-C5A5-400E-A1ED-D90E901C51D6}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.167"
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
   DTS:VersionBuild="3"
-  DTS:VersionGUID="{C772A984-5F95-4A00-820D-AF85D5CC1E87}">
+  DTS:VersionGUID="{7E90EFB4-C431-4572-9D5E-981A2C679331}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S107761]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{A505A63D-40D4-4298-844E-E52AC137EE44}"
+      DTS:DTSID="{94657F6E-E464-40A2-980E-16ED7D165649}"
       DTS:ObjectName="db-mssql16.pjwstk.edu.pl.S107761">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -35,7 +35,7 @@
       DTS:refId="Package\Execute SQL Task - cleaning table InsertTime"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{5E239D62-DFD2-4187-AE23-55876AB73B85}"
+      DTS:DTSID="{5559C363-0353-4046-B98F-CF6BD0409A53}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task - cleaning table InsertTime"
@@ -44,7 +44,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A505A63D-40D4-4298-844E-E52AC137EE44}"
+          SQLTask:Connection="{94657F6E-E464-40A2-980E-16ED7D165649}"
           SQLTask:SqlStatementSource="truncate table TimeDimension;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -52,7 +52,7 @@
       DTS:refId="Package\Execute SQL Task - InsertTime"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8E5E330E-1E26-445B-BB01-B873DE5AC15D}"
+      DTS:DTSID="{5D6CC0DF-670E-4B7C-B222-D5E8A3149A7B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task - InsertTime"
@@ -61,7 +61,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A505A63D-40D4-4298-844E-E52AC137EE44}"
+          SQLTask:Connection="{94657F6E-E464-40A2-980E-16ED7D165649}"
           SQLTask:SqlStatementSource="exec InsertTime;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -70,7 +70,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{CE01ADDB-6779-4E1C-9AEE-DB248F433296}"
+      DTS:DTSID="{448C7AB2-B021-4120-A328-EC5D51836A64}"
       DTS:From="Package\Execute SQL Task - cleaning table InsertTime"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
