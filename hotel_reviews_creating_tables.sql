@@ -23,6 +23,26 @@ days_since_review int,
 --lng int
 );
 
+create table HotelReviewsDeduplicated(
+Hotel_Address varchar(256), 
+--Additional_Number_of_Scoring int, 
+Review_Date date, 
+Average_Score int, 
+Hotel_Name varchar(310), 
+Reviewer_Nationality varchar(260), 
+--Negative_Review varchar(5760), 
+Review_Total_Negative_Word_Counts int, 
+Total_Number_of_Reviews int, 
+--Positive_Review varchar(5780), 
+Review_Total_Positive_Word_Counts int, 
+--Total_Number_of_Reviews_Reviewer_Has_Given int, 
+Reviewer_Score int, 
+Tags varchar(556), 
+days_since_review int, 
+--lat int, 
+--lng int
+);
+
 select count(1) from HotelReviews;
 
 /*End of CSV data table definitions */
@@ -144,3 +164,29 @@ ALTER TABLE Hotel_Review
 ADD CONSTRAINT fk_time
 FOREIGN KEY(time_id) REFERENCES TimeDimension
 GO
+
+
+SELECT Hotel_Address
+      ,Review_Date
+      ,Average_Score
+      ,Hotel_Name
+      ,Reviewer_Nationality
+      ,Review_Total_Negative_Word_Counts
+      ,Total_Number_of_Reviews
+      ,Review_Total_Positive_Word_Counts
+      ,Reviewer_Score
+      ,Tags
+      ,days_since_review
+  FROM HotelReviews
+
+  group by Hotel_Address
+      ,Review_Date
+      ,Average_Score
+      ,Hotel_Name
+      ,Reviewer_Nationality
+      ,Review_Total_Negative_Word_Counts
+      ,Total_Number_of_Reviews
+      ,Review_Total_Positive_Word_Counts
+      ,Reviewer_Score
+      ,Tags
+      ,days_since_review;

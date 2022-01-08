@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{3DF437FB-BD7E-4812-9FC2-3038D3B2D469}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{F8019581-34D8-43BA-AEBA-DBFEC93A0B4F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -991,14 +991,14 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
-          TopLeft="291.874998183921,34.449999383986" />
+          TopLeft="239.874998183921,7.449999383986" />
         <NodeLayout
           Size="163,42"
           Id="Package\Execute SQL Task"
-          TopLeft="62,36" />
+          TopLeft="10,9" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="225,56.224999691993">
+          TopLeft="173,29.224999691993">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
