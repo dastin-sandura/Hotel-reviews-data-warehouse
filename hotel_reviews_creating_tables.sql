@@ -1,11 +1,11 @@
 /*Table for CSV data */ 
 
 --use s10523;
---drop table dbo.HotelReviews ;
+drop table dbo.HotelReviews ;
 
-create table HotelReviews (
+create table  HotelReviews (
 Hotel_Address varchar(256), 
---Additional_Number_of_Scoring int, 
+Additional_Number_of_Scoring int, 
 Review_Date date, 
 Average_Score int, 
 Hotel_Name varchar(310), 
@@ -15,35 +15,14 @@ Review_Total_Negative_Word_Counts int,
 Total_Number_of_Reviews int, 
 --Positive_Review varchar(5780), 
 Review_Total_Positive_Word_Counts int, 
---Total_Number_of_Reviews_Reviewer_Has_Given int, 
+Total_Number_of_Reviews_Reviewer_Has_Given int, 
 Reviewer_Score int, 
 Tags varchar(556), 
 days_since_review int, 
+row_count int default 1
 --lat int, 
 --lng int
 );
-
-create table HotelReviewsDeduplicated(
-Hotel_Address varchar(256), 
---Additional_Number_of_Scoring int, 
-Review_Date date, 
-Average_Score int, 
-Hotel_Name varchar(310), 
-Reviewer_Nationality varchar(260), 
---Negative_Review varchar(5760), 
-Review_Total_Negative_Word_Counts int, 
-Total_Number_of_Reviews int, 
---Positive_Review varchar(5780), 
-Review_Total_Positive_Word_Counts int, 
---Total_Number_of_Reviews_Reviewer_Has_Given int, 
-Reviewer_Score int, 
-Tags varchar(556), 
-days_since_review int, 
---lat int, 
---lng int
-);
-
-select count(1) from HotelReviews;
 
 /*End of CSV data table definitions */
 
@@ -190,3 +169,20 @@ SELECT Hotel_Address
       ,Reviewer_Score
       ,Tags
       ,days_since_review;
+
+	  alter table HotelReviews add   row_count int default 1;
+	  alter table HotelReviews drop column ro;
+
+	  /*
+Data of a duplicated row 
+	--Hotel_Address														Additional_Number_of_Scoring	Review_Date	Average_Score	Hotel_Name			Reviewer_Nationality	Review_Total_Negative_Word_Counts	Total_Number_of_Reviews	Review_Total_Positive_Word_Counts	Total_Number_of_Reviews_Reviewer_Has_Given	Reviewer_Score	Tags	days_since_review	row_count
+	--40 Rue du Commandant Ren Mouchotte 14th arr 75014 Paris France	228								2015-09-12	8	H tel Concorde Montparnasse		Egypt 					2	2515	2	2	2	[' Couple ', ' Classic Double Room ', ' Stayed 3 nights ', ' Submitted from a mobile device ']	691	1
+
+	select * from HotelReviews where
+	Additional_Number_of_Scoring = 228
+	and Average_Score = 8
+	and Hotel_Name = 'H tel Concorde Montparnasse'
+	and Reviewer_Nationality = ' Egypt '
+	and Review_Total_Negative_Word_Counts = 2
+	;
+	  */
