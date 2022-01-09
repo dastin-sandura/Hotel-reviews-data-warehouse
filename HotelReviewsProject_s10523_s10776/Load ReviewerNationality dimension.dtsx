@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{63B0358B-E03D-442B-AD98-3E45183538E7}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{B5E816BB-56ED-46F5-8053-C25C02B69D96}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -126,6 +126,13 @@
                       cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reviewer_nationality]"
                       lineageId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Reviewer_Nationality]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      cachedDataType="i4"
+                      cachedName="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      lineageId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -137,8 +144,12 @@
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reviewer_nationality]"
                       codePage="1250"
                       dataType="str"
-                      length="260"
+                      length="255"
                       name="reviewer_nationality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -239,6 +250,15 @@
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Nationality]"
                       name="Reviewer_Nationality"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -246,7 +266,7 @@
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
-                      length="100"
+                      length="256"
                       name="Hotel_Address" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Review_Date]"
@@ -285,15 +305,51 @@
                       dataType="i4"
                       name="Reviewer_Score" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Tags]"
-                      codePage="1250"
-                      dataType="str"
-                      length="300"
-                      name="Tags" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[days_since_review]"
                       dataType="i4"
                       name="days_since_review" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Additional_Number_of_Scoring]"
+                      dataType="i4"
+                      name="Additional_Number_of_Scoring" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stay_length]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="stay_length" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[posted_via_mobile]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="posted_via_mobile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[room_type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="room_type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[guest_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="guest_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[trip_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="trip_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[row_count]"
+                      dataType="i4"
+                      name="row_count" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -320,6 +376,11 @@
                       length="260"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Reviewer_Nationality]"
                       name="Reviewer_Nationality" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -366,6 +427,22 @@
                           name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Remove duplicates and sort.Inputs[Sort Input].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      cachedDataType="i4"
+                      cachedName="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -390,6 +467,20 @@
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Nationality]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>

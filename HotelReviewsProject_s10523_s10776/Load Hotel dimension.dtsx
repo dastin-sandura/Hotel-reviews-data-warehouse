@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{0231E0C7-2033-46D0-A2F4-04947979D146}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{2722321A-0F3C-4194-BEF7-E42743DACA39}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -122,7 +122,7 @@ FROM            Hotel</property>
                       refId="Package\Data Flow Task\Insert unique pairs into Hotel dimension - OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Hotel_Address]"
                       cachedCodepage="1250"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="256"
                       cachedName="Hotel_Address"
                       cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Data Flow Task\Insert unique pairs into Hotel dimension - OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotel_address]"
@@ -251,7 +251,7 @@ FROM            Hotel</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hotel_Address]"
-                      length="100"
+                      length="256"
                       lineageId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].Columns[Hotel_Address]"
                       name="Hotel_Address"
                       truncationRowDisposition="FailComponent" />
@@ -273,7 +273,7 @@ FROM            Hotel</property>
                       refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
-                      length="100"
+                      length="256"
                       name="Hotel_Address" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Review_Date]"
@@ -312,15 +312,51 @@ FROM            Hotel</property>
                       dataType="i4"
                       name="Reviewer_Score" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Tags]"
-                      codePage="1250"
-                      dataType="str"
-                      length="300"
-                      name="Tags" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[days_since_review]"
                       dataType="i4"
                       name="days_since_review" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Additional_Number_of_Scoring]"
+                      dataType="i4"
+                      name="Additional_Number_of_Scoring" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stay_length]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="stay_length" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[posted_via_mobile]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="posted_via_mobile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[room_type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="room_type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[guest_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="guest_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[trip_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="trip_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[row_count]"
+                      dataType="i4"
+                      name="row_count" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -344,7 +380,7 @@ FROM            Hotel</property>
                       refId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
-                      length="100"
+                      length="256"
                       lineageId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Hotel_Address]"
                       name="Hotel_Address" />
                     <outputColumn
@@ -386,7 +422,7 @@ FROM            Hotel</property>
                       refId="Package\Data Flow Task\Remove duplicates and sort.Inputs[Sort Input].Columns[Hotel_Address]"
                       cachedCodepage="1250"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="256"
                       cachedName="Hotel_Address"
                       lineageId="Package\Data Flow Task\Read hotel address and hotel name from HotelReviews - OLE DB Source.Outputs[OLE DB Source Output].Columns[Hotel_Address]">
                       <properties>
@@ -432,7 +468,7 @@ FROM            Hotel</property>
                       refId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
-                      length="100"
+                      length="256"
                       lineageId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Hotel_Address]"
                       name="Hotel_Address"
                       sortKeyPosition="1">
@@ -584,28 +620,6 @@ FROM            Hotel</property>
           Id="Package\Data Flow Task\Insert unique pairs into Hotel dimension - OLE DB Destination"
           TopLeft="13,148" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="201.75,125">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,23"
-              Start="0,0"
-              End="0,15.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="227.5,50">
           <EdgeLayout.Curve>
@@ -631,6 +645,28 @@ FROM            Hotel</property>
                     Point3="-22,20.5" />
                   <mssgle:LineSegment
                     End="-22,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="201.75,125">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,23"
+              Start="0,0"
+              End="0,15.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
