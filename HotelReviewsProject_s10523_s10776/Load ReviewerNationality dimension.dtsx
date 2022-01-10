@@ -5,23 +5,37 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LAB220-16"
   DTS:CreatorName="PJWSTK\s10523"
-  DTS:DTSID="{FB627D44-A1C1-4308-BAA1-A0BD58177080}"
+  DTS:DTSID="{07D70CC0-61E4-4107-9ED2-4286D619CF09}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.167"
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{388E6AD4-1DA9-4F38-8D56-2D615D72B666}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{B5E816BB-56ED-46F5-8053-C25C02B69D96}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4A00A0E2-C960-4365-B438-163F200B7DFE}"
+      DTS:ObjectName="db-mssql16.pjwstk.edu.pl.S10523">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=S10523;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{C349BC84-F370-4431-9ED5-EEE7DD175BBF}"
+      DTS:DTSID="{3C10A1FC-8E43-41DB-A3DF-41DB271C9F7D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -90,8 +104,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -112,6 +126,13 @@
                       cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reviewer_nationality]"
                       lineageId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Reviewer_Nationality]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      cachedDataType="i4"
+                      cachedName="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      lineageId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -123,8 +144,12 @@
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reviewer_nationality]"
                       codePage="1250"
                       dataType="str"
-                      length="260"
+                      length="255"
                       name="reviewer_nationality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -204,8 +229,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql16.pjwstk.edu.pl.S10523]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -225,6 +250,15 @@
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Nationality]"
                       name="Reviewer_Nationality"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -232,7 +266,7 @@
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hotel_Address]"
                       codePage="1250"
                       dataType="str"
-                      length="100"
+                      length="256"
                       name="Hotel_Address" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Review_Date]"
@@ -271,15 +305,51 @@
                       dataType="i4"
                       name="Reviewer_Score" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Tags]"
-                      codePage="1250"
-                      dataType="str"
-                      length="300"
-                      name="Tags" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[days_since_review]"
                       dataType="i4"
                       name="days_since_review" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Additional_Number_of_Scoring]"
+                      dataType="i4"
+                      name="Additional_Number_of_Scoring" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stay_length]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="stay_length" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[posted_via_mobile]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="posted_via_mobile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[room_type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="room_type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[guest_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="guest_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[trip_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="trip_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[row_count]"
+                      dataType="i4"
+                      name="row_count" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -306,6 +376,11 @@
                       length="260"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Reviewer_Nationality]"
                       name="Reviewer_Nationality" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -352,6 +427,22 @@
                           name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Remove duplicates and sort.Inputs[Sort Input].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      cachedDataType="i4"
+                      cachedName="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -376,6 +467,20 @@
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Nationality]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Remove duplicates and sort.Outputs[Sort Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -403,7 +508,7 @@
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{02BB323A-C736-49D7-B670-8B10DE498F25}"
+      DTS:DTSID="{1248127C-9E5E-485B-B016-E4EF16D1E490}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -412,8 +517,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{C2BE7E75-A171-46B4-BC2E-FFC918614A43}"
-          SQLTask:SqlStatementSource="truncate table s10523.dbo.Reviewer;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{4A00A0E2-C960-4365-B438-163F200B7DFE}"
+          SQLTask:SqlStatementSource="truncate table Reviewer;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -421,7 +526,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{29E2B500-6861-4B1C-B7CC-9DE51F90FCAE}"
+      DTS:DTSID="{A7ADF0B3-7622-4C52-8F02-F5E65122458C}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -482,13 +587,47 @@
           Id="Package\Data Flow Task\Remove duplicates and sort"
           TopLeft="38,79" />
         <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="35,174" />
+        <NodeLayout
           Size="150,42"
           Id="Package\Data Flow Task\OLE DB Source"
           TopLeft="17,9" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="9,169" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="142.5,121">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22,53"
+              Start="0,0"
+              End="-22,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="-4,26.5" />
+                  <mssgle:LineSegment
+                    End="-18,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18,26.5"
+                    Point2="-22,26.5"
+                    Point3="-22,30.5" />
+                  <mssgle:LineSegment
+                    End="-22,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="92,51">
@@ -523,45 +662,11 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="142.5,121">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-48,48"
-              Start="0,0"
-              End="-48,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20"
-                    Point2="0,24"
-                    Point3="-4,24" />
-                  <mssgle:LineSegment
-                    End="-44,24" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-44,24"
-                    Point2="-48,24"
-                    Point3="-48,28" />
-                  <mssgle:LineSegment
-                    End="-48,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -574,7 +679,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
