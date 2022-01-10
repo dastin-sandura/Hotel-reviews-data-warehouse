@@ -1,0 +1,308 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8135fe80-a527-44a8-9bd0-83b6e8976ce7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>S10523</ID>
+  <Name>S10523</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="10e80b68-5a36-415a-92dc-3729bce1dc95">
+      <ID>Hotel</ID>
+      <Name>Hotel</Name>
+      <DimensionID>Hotel</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2dfee95e-dcb5-4c73-a047-7e550402ef67">
+          <AttributeID>Hotel Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05768b70-c08a-4631-9894-98da99819c08">
+          <AttributeID>Hotel Address</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="def2245f-580f-44a6-a630-55587fc55034">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="14c2874d-8131-44ea-b722-35d4af2807ec">
+          <AttributeID>Time Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="521728b4-5986-4f65-8452-73b0d402eb05">
+          <AttributeID>Review Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="341e154b-8557-4305-b295-6740cf73a984">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fdd55274-a5e8-4797-96ec-1b0cf5208866">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cbdd74a9-e1ab-4c15-932e-d821da180f97">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a87ecf4-e8e2-4be7-9aa5-001b1a29960e">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89dcaa7d-3bbc-47ac-85c8-547787c10617">
+          <AttributeID>Week Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8dba6253-16ff-469a-b0ea-40c277e1adea">
+          <AttributeID>Month Name PL</AttributeID>
+          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+        </Attribute>
+        <Attribute dwd:design-time-name="d024025e-4831-48f0-bb0c-aa6bf1b5020e">
+          <AttributeID>Month Name ENG</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9306cfa1-1bda-4770-8c6a-805de685d175">
+          <AttributeID>Week Name PL</AttributeID>
+          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+        </Attribute>
+        <Attribute dwd:design-time-name="95b5c1c0-3ab4-4145-a0a2-38e77996dcc1">
+          <AttributeID>Week Name ENG</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="b8d7acae-a2fe-4d48-9596-b83b0660b9a1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8920d49d-b1a6-4883-9fc8-b79c6a9bd288">
+      <ID>Reviewer</ID>
+      <Name>Reviewer</Name>
+      <DimensionID>Reviewer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1a90e0c0-fb7e-49e8-b4cb-36f00f62b7ad">
+          <AttributeID>Reviewer Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7eefef8a-70b3-4699-8699-3f87ccb2d074">
+          <AttributeID>Reviewer Nationality</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e20b0cb-59e8-4053-8dde-14d4fa254e26">
+          <AttributeID>Total Number Of Reviews Reviewer Has Given</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0becd705-4007-4d8b-a688-4debe8a9082c">
+      <ID>Comment Characteristic</ID>
+      <Name>Comment Characteristic</Name>
+      <DimensionID>Comment Characteristic</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="72e7797f-7ece-4826-b151-ed3137e496db">
+          <AttributeID>Comment Characteristic Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d7664be-3f02-48b8-8bb2-ebaf87f1eee3">
+          <AttributeID>Total Positive Comments Word Count</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ba596450-3d2b-4c39-a3bd-ffa41e83c86d">
+          <AttributeID>Total Negative Comments Word Count</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="711da8b6-583d-4cdf-910f-d19e88aa0628">
+      <ID>Stay Description</ID>
+      <Name>Stay Description</Name>
+      <DimensionID>Stay Description</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b785546e-fd21-48a7-b1a4-1be25403c281">
+          <AttributeID>Stay Description Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8647e04a-a772-4c6c-a255-52274a6ddeaf">
+          <AttributeID>Stay Length</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44c97aaf-8280-45fb-81fa-bae4cfc46b8c">
+          <AttributeID>Trip Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="944402f0-2238-40e2-92c5-aace2ceb7274">
+          <AttributeID>Guest Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47d13c0b-4087-48b7-885e-710576adcdb4">
+          <AttributeID>Room Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f48f671-d7dc-442c-a8ac-1dc2165350d2">
+          <AttributeID>Posted Via Mobile</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="432bcb75-6e2f-4416-862b-f55bd3fb972a">
+      <ID>Hotel Review</ID>
+      <Name>Hotel Review</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2983651d-0004-4fec-b367-3b519894ac56">
+          <ID>Numerical Score</ID>
+          <Name>Numerical Score</Name>
+          <Source dwd:design-time-name="8577f538-0be8-461c-a6c7-8b97fc48346b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="69b08d0a-13b6-4783-aa76-be1a1860730b">
+              <TableID>dbo_Hotel_Review</TableID>
+              <ColumnID>numerical_score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d57ea045-642f-4391-bf0b-8122c5ebe303">
+          <ID>Upvotes Number</ID>
+          <Name>Upvotes Number</Name>
+          <Source dwd:design-time-name="320b3760-0774-4bb1-b3a6-246e80387911">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b2c9901b-067f-4e33-9739-a5b9caf69583">
+              <TableID>dbo_Hotel_Review</TableID>
+              <ColumnID>upvotes_number</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e075d9d0-2aee-4276-9163-55f02aad293f">
+          <ID>Hotel Review Count</ID>
+          <Name>Hotel Review Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9e6ab607-64c0-4759-b527-45a7a58a4a96">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="71f2d597-38ea-4654-a9e6-eae3eaf604de">
+              <TableID>dbo_Hotel_Review</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c4e5b919-1f83-4c4e-b71d-b479d0728456">
+          <CubeDimensionID>Hotel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fda2f2bf-9a2e-4ed8-829d-59a8f98d3e36">
+              <AttributeID>Hotel Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6633d602-790d-46b5-92bf-b82599618706">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c97f0ab-233f-4fc8-be22-e93c9f90583e">
+                    <TableID>dbo_Hotel_Review</TableID>
+                    <ColumnID>hotel_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="54a99a6a-7714-40d3-8646-7c1c5b0f0c41">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8898c646-d6a1-455c-bee2-b5fc2b799494">
+              <AttributeID>Time Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1dd5f823-8a21-45d5-b187-70ef01a2a5ef">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5d569e46-647b-48af-a316-7a8f213be45f">
+                    <TableID>dbo_Hotel_Review</TableID>
+                    <ColumnID>time_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="131b6b23-e234-4535-be4b-5668b79eb046">
+          <CubeDimensionID>Reviewer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="befc76e5-626d-4227-8587-b24a38564fda">
+              <AttributeID>Reviewer Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="831d4220-c13d-440b-a220-4bd56a649771">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2b9e5e16-bee9-4992-b088-bac20c28e755">
+                    <TableID>dbo_Hotel_Review</TableID>
+                    <ColumnID>reviewer_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d6c859f1-5bc0-48ef-95d9-0339cf384a01">
+          <CubeDimensionID>Comment Characteristic</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="980a5b63-d431-4638-a23d-a1eeab4418ba">
+              <AttributeID>Comment Characteristic Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7819d61f-1e4f-4208-ac8b-e669b531a786">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b23f1c0-e0b6-48b3-abbd-50d2025132fb">
+                    <TableID>dbo_Hotel_Review</TableID>
+                    <ColumnID>comment_characteristic_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6e35a63f-7db9-4d92-b068-9ae9a05a5c8a">
+          <CubeDimensionID>Stay Description</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="02edae0c-e7b8-4b6c-aa8a-9b439c3d155f">
+              <AttributeID>Stay Description Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="50cd11f6-e367-4d45-8973-e503dacf5305">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9c4b8ea0-718c-4015-8887-6406eb84274e">
+                    <TableID>dbo_Hotel_Review</TableID>
+                    <ColumnID>stay_description_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="52fe2ff0-0ab8-4614-97e2-0f19e5c61843">
+    <DataSourceViewID>S10523</DataSourceViewID>
+  </Source>
+</Cube>
