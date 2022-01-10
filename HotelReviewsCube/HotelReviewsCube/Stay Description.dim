@@ -1,0 +1,181 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f711d910-942d-427a-8a95-95193c1728fc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Stay Description</ID>
+  <Name>Stay Description</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f1275c52-fc28-48a5-8e31-5f3b8cf45435">
+    <DataSourceViewID>S10523</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="e71c7d59-e8c4-4542-a858-0bc61a58a8db">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="f24d5418-ae9e-408c-9d5a-d0cf40a6f40a">
+      <ID>Stay Description Id</ID>
+      <Name>Stay Description Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9e992514-32b6-4323-a909-86df6af52f2a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23ca39dd-b6d1-4614-a152-194234f66710">
+            <TableID>dbo_StayDescription</TableID>
+            <ColumnID>stay_description_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9301823e-7348-4fd9-8281-f9c2d8c0e3c1">
+          <AttributeID>Stay Length</AttributeID>
+          <Name>Stay Length</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="efb8a78d-036b-4f18-a506-0f66db5af81f">
+          <AttributeID>Trip Category</AttributeID>
+          <Name>Trip Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="81ccb4a4-1bee-4b2f-8902-0dfa2aa4dc49">
+          <AttributeID>Guest Category</AttributeID>
+          <Name>Guest Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b635983e-6324-4ccf-a20d-529a540a987d">
+          <AttributeID>Room Type</AttributeID>
+          <Name>Room Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0627a8ec-fd5f-40fa-b494-6cf04d6feedf">
+          <AttributeID>Posted Via Mobile</AttributeID>
+          <Name>Posted Via Mobile</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ab97440d-d3bb-4ee3-914f-6b2411edbc12">
+      <ID>Stay Length</ID>
+      <Name>Stay Length</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6de34fc7-64a1-4ed0-b83d-f72d322ea5c6">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a04dc32d-572a-488d-8100-81d0b3ba3285">
+            <TableID>dbo_StayDescription</TableID>
+            <ColumnID>stay_length</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cf4b58fe-4632-4977-8a72-2ab8d43410fb">
+      <ID>Trip Category</ID>
+      <Name>Trip Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2f3da748-2f94-4787-a45d-5ddf0b515412">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="152319f2-7ed1-417e-ba98-c1c62c909ccf">
+            <TableID>dbo_StayDescription</TableID>
+            <ColumnID>trip_category</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="edc505bb-1fed-4f98-b58a-b7635d8da6d9">
+      <ID>Guest Category</ID>
+      <Name>Guest Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="056f788c-0b97-4b12-aaaf-a5c67f054850">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2937bb97-ac41-4260-9753-09a03a1623f2">
+            <TableID>dbo_StayDescription</TableID>
+            <ColumnID>guest_category</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="29cd39a8-f1e2-4ebe-97dd-500fbf61d28f">
+      <ID>Room Type</ID>
+      <Name>Room Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa5535e5-8913-40ba-a19d-450902103cd2">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="398c501b-ae44-4dfc-b56e-569e8c7d535d">
+            <TableID>dbo_StayDescription</TableID>
+            <ColumnID>room_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="befb10f5-97c3-41b1-85c7-b13772cf23ef">
+      <ID>Posted Via Mobile</ID>
+      <Name>Posted Via Mobile</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="77b5ee7d-e70f-4397-aa03-192558673ef8">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="55d2f185-18e7-4d0d-9b60-bd7a0e6d2447">
+            <TableID>dbo_StayDescription</TableID>
+            <ColumnID>posted_via_mobile</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

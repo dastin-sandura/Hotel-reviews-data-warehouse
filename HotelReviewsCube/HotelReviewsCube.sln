@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "HotelReviewsCube", "HotelReviewsCube\HotelReviewsCube.dwproj", "{60269E8E-9E8A-463B-95C8-74BF738EDEAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60269E8E-9E8A-463B-95C8-74BF738EDEAA}.Development|Default.ActiveCfg = Development
+		{60269E8E-9E8A-463B-95C8-74BF738EDEAA}.Development|Default.Build.0 = Development
+		{60269E8E-9E8A-463B-95C8-74BF738EDEAA}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32255D4F-98DC-48F9-8709-F18DDFA1AA4A}
+	EndGlobalSection
+EndGlobal
