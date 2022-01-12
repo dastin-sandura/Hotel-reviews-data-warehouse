@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Load facts debug"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{A1AD12E4-AE94-4F74-8199-77E22758704E}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{82D666E8-2A7A-4462-8E41-291045C26C74}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2179,7 +2179,7 @@ where [refTable].[Review_Date] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Hotel_Review]</property>
+                  name="OpenRowset">[dbo].[Hotel_ReviewSt]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2327,6 +2327,10 @@ where [refTable].[Review_Date] = ?</property>
                       dataType="numeric"
                       name="row_count"
                       precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotel_reviewSt_id]"
+                      dataType="i4"
+                      name="hotel_reviewSt_id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>

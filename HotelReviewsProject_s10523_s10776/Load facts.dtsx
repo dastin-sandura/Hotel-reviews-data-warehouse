@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{EB82DF00-B9C8-4879-832D-5F174FD86AC6}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{23026484-EC2F-4BDE-862A-619F3D3C8095}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -260,12 +260,6 @@
                       cachedName="Review_Date"
                       externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Average_Score]"
-                      cachedDataType="i4"
-                      cachedName="Average_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
                       cachedCodepage="1250"
@@ -1413,7 +1407,7 @@ where [refTable].[Review_Date] = ?</property>
                 <input
                   refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
@@ -1559,7 +1553,6 @@ where [refTable].[Review_Date] = ?</property>
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT Hotel_Address
       ,avg(Additional_Number_of_Scoring) 'Additional_Number_of_Scoring'
       ,Review_Date
-      ,avg(Average_Score) 'Average_Score'
       ,Hotel_Name
       ,Reviewer_Nationality
       ,avg(Review_Total_Negative_Word_Counts) 'Review_Total_Negative_Word_Counts'
@@ -1579,14 +1572,12 @@ where [refTable].[Review_Date] = ?</property>
   Hotel_Address
       ,Additional_Number_of_Scoring
       ,Review_Date
-      ,Average_Score
       ,Hotel_Name
       ,Reviewer_Nationality
       ,Review_Total_Negative_Word_Counts
       ,Total_Number_of_Reviews
       ,Review_Total_Positive_Word_Counts
       ,Total_Number_of_Reviews_Reviewer_Has_Given
-      ,Reviewer_Score
       ,stay_length
       ,posted_via_mobile
       ,room_type
@@ -1658,15 +1649,6 @@ where [refTable].[Review_Date] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Review_Date]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]"
                       name="Review_Date"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]"
-                      name="Average_Score"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hotel_Name]"
@@ -1826,10 +1808,6 @@ where [refTable].[Review_Date] = ?</property>
                       dataType="dbDate"
                       name="Review_Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Average_Score]"
-                      dataType="i4"
-                      name="Average_Score" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hotel_Name]"
                       codePage="1250"
                       dataType="str"
@@ -1923,11 +1901,6 @@ where [refTable].[Review_Date] = ?</property>
                       dataType="dbDate"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Review_Date]"
                       name="Review_Date" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Average_Score]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Average_Score]"
-                      name="Average_Score" />
                     <outputColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Hotel_Name]"
                       codePage="1250"
@@ -2085,12 +2058,6 @@ where [refTable].[Review_Date] = ?</property>
                       cachedName="Review_Date"
                       externalMetadataColumnId="Package\Data Flow Task\Unmatched Stay Description.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Unmatched Stay Description.Inputs[Flat File Destination Input].Columns[Average_Score]"
-                      cachedDataType="i4"
-                      cachedName="Average_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Unmatched Stay Description.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Unmatched Stay Description.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
                       cachedCodepage="1250"
@@ -2309,12 +2276,6 @@ where [refTable].[Review_Date] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task\Unmatched Time Dimension.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Unmatched Time Dimension.Inputs[Flat File Destination Input].Columns[Average_Score]"
-                      cachedDataType="i4"
-                      cachedName="Average_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Unmatched Time Dimension.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\Unmatched Time Dimension.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
                       cachedCodepage="1250"
                       cachedDataType="str"
@@ -2531,12 +2492,6 @@ where [refTable].[Review_Date] = ?</property>
                       cachedName="Review_Date"
                       externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Average_Score]"
-                      cachedDataType="i4"
-                      cachedName="Average_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
                       cachedCodepage="1250"
@@ -2787,12 +2742,6 @@ where [refTable].[Review_Date] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task\Write to file facts not matched by Hotel.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Write to file facts not matched by Hotel.Inputs[Flat File Destination Input].Columns[Average_Score]"
-                      cachedDataType="i4"
-                      cachedName="Average_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Write to file facts not matched by Hotel.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\Write to file facts not matched by Hotel.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
                       cachedCodepage="1250"
                       cachedDataType="str"
@@ -3009,12 +2958,6 @@ where [refTable].[Review_Date] = ?</property>
                       cachedName="Review_Date"
                       externalMetadataColumnId="Package\Data Flow Task\Write unmatched by Comment Characteristic.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write unmatched by Comment Characteristic.Inputs[Flat File Destination Input].Columns[Average_Score]"
-                      cachedDataType="i4"
-                      cachedName="Average_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Write unmatched by Comment Characteristic.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Write unmatched by Comment Characteristic.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
                       cachedCodepage="1250"
@@ -3456,37 +3399,37 @@ where [refTable].[Review_Date] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output4]"
-          TopLeft="1195,64">
+          TopLeft="1225.66666666667,64">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-20.5,386"
+              EndConnector="-51.1666666666667,386"
               Start="0,0"
-              End="-20.5,378.5">
+              End="-51.1666666666667,378.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,189" />
+                    End="0,152.314049586777" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,189"
-                    Point2="0,193"
-                    Point3="-4,193" />
+                    Point1="0,152.314049586777"
+                    Point2="0,156.314049586777"
+                    Point3="-4,156.314049586777" />
                   <mssgle:LineSegment
-                    End="-16.5,193" />
+                    End="-47.1666666666667,156.314049586777" />
                   <mssgle:CubicBezierSegment
-                    Point1="-16.5,193"
-                    Point2="-20.5,193"
-                    Point3="-20.5,197" />
+                    Point1="-47.1666666666667,156.314049586777"
+                    Point2="-51.1666666666667,156.314049586777"
+                    Point3="-51.1666666666667,160.314049586777" />
                   <mssgle:LineSegment
-                    End="-20.5,378.5" />
+                    End="-51.1666666666667,378.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-58.44138671875,198,96.3827734375,11.609375"
+              BoundingBox="-73.7747200520834,161.314049586777,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3887,7 +3830,7 @@ where [refTable].[Review_Date] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -3897,7 +3840,7 @@ where [refTable].[Review_Date] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
