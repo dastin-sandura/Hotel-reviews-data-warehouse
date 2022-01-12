@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{E216E4A3-BD3A-49D8-B0EA-DFC561F97B69}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{EB82DF00-B9C8-4879-832D-5F174FD86AC6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1459,6 +1459,12 @@ where [refTable].[Review_Date] = ?</property>
                       cachedName="Additional_Number_of_Scoring"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[upvotes_number]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Additional_Number_of_Scoring]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[row_count]"
+                      cachedDataType="i4"
+                      cachedName="row_count"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[row_count]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[row_count]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1483,18 +1489,6 @@ where [refTable].[Review_Date] = ?</property>
                       dataType="i4"
                       name="time_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[negative_comments_text]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="negative_comments_text" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[positive_comments_text]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="positive_comments_text" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[numerical_score]"
                       dataType="numeric"
                       name="numerical_score"
@@ -1503,6 +1497,11 @@ where [refTable].[Review_Date] = ?</property>
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[upvotes_number]"
                       dataType="numeric"
                       name="upvotes_number"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[row_count]"
+                      dataType="numeric"
+                      name="row_count"
                       precision="18" />
                   </externalMetadataColumns>
                 </input>
@@ -1574,7 +1573,7 @@ where [refTable].[Review_Date] = ?</property>
       ,trip_category
       ,avg(days_since_review) 'days_since_review'
       ,sum(row_count) 'row_count'
-	  ,avg(Total_Number_of_Reviews_Reviewer_Has_Given) 'Total_Number_of_Reviews_Reviewer_Has_Given'
+      ,avg(Total_Number_of_Reviews_Reviewer_Has_Given) 'Total_Number_of_Reviews_Reviewer_Has_Given'
   FROM HotelReviews
   group by
   Hotel_Address

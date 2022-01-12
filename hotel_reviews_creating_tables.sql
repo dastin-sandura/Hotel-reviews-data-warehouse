@@ -110,7 +110,7 @@ CREATE TABLE Hotel_Review(
    time_id int NOT NULL, 
    numerical_score numeric NOT NULL,
    upvotes_number numeric NOT NULL,
-   row_count numeric NOT NULL
+   row_count numeric NULL
    PRIMARY KEY(hotel_id, stay_description_id, reviewer_id, comment_characteristic_id,time_id)
 )
 GO
@@ -141,6 +141,7 @@ ALTER TABLE Hotel_Review
 ADD CONSTRAINT fk_time
 FOREIGN KEY(time_id) REFERENCES TimeDimension
 GO
+
 
 
 SELECT Hotel_Address

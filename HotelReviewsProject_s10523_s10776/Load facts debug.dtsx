@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Load facts debug"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{D2D7837A-1FBC-4C47-8F89-0AF1C78A7BE5}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{A1AD12E4-AE94-4F74-8199-77E22758704E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2231,7 +2231,7 @@ where [refTable].[Review_Date] = ?</property>
                 <input
                   refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
@@ -2281,6 +2281,14 @@ where [refTable].[Review_Date] = ?</property>
                       cachedName="Additional_Number_of_Scoring"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[upvotes_number]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Additional_Number_of_Scoring]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[row_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="row_count"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[row_count]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[row_count]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2305,18 +2313,6 @@ where [refTable].[Review_Date] = ?</property>
                       dataType="i4"
                       name="time_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[negative_comments_text]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="negative_comments_text" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[positive_comments_text]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="positive_comments_text" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[numerical_score]"
                       dataType="numeric"
                       name="numerical_score"
@@ -2325,6 +2321,11 @@ where [refTable].[Review_Date] = ?</property>
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[upvotes_number]"
                       dataType="numeric"
                       name="upvotes_number"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[row_count]"
+                      dataType="numeric"
+                      name="row_count"
                       precision="18" />
                   </externalMetadataColumns>
                 </input>
