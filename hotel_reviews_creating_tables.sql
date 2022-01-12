@@ -106,13 +106,11 @@ CREATE TABLE Hotel_Review(
    hotel_id int NOT NULL,
    stay_description_id int NOT NULL,
    reviewer_id int NOT NULL,
-   reviewer_id int NOT NULL, 
    comment_characteristic_id int NOT NULL, 
    time_id int NOT NULL, 
-   negative_comments_text(negative_review) VARCHAR(255), 
-   positive_comments_text(positive_review) VARCHAR(255), 
    numerical_score numeric NOT NULL,
    upvotes_number numeric NOT NULL,
+   row_count numeric NOT NULL
    PRIMARY KEY(hotel_id, stay_description_id, reviewer_id, comment_characteristic_id,time_id)
 )
 GO

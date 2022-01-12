@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{E216E4A3-BD3A-49D8-B0EA-DFC561F97B69}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{9857F459-3907-4F9F-A921-47D86C7F238E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -423,6 +423,261 @@
                       dataType="str"
                       length="50"
                       name="lng" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination 1"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1045"
+              name="Flat File Destination 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Hotel_Address]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="Hotel_Address"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Address]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hotel_Address]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Additional_Number_of_Scoring]"
+                      cachedDataType="i4"
+                      cachedName="Additional_Number_of_Scoring"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Additional_Number_of_Scoring]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Additional_Number_of_Scoring]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Review_Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Review_Date"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Average_Score]"
+                      cachedDataType="i4"
+                      cachedName="Average_Score"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="310"
+                      cachedName="Hotel_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Name]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hotel_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Reviewer_Nationality]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="260"
+                      cachedName="Reviewer_Nationality"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Nationality]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Nationality]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Review_Total_Negative_Word_Counts]"
+                      cachedDataType="i4"
+                      cachedName="Review_Total_Negative_Word_Counts"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Total_Negative_Word_Counts]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Total_Number_of_Reviews]"
+                      cachedDataType="i4"
+                      cachedName="Total_Number_of_Reviews"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Review_Total_Positive_Word_Counts]"
+                      cachedDataType="i4"
+                      cachedName="Review_Total_Positive_Word_Counts"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Total_Positive_Word_Counts]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Reviewer_Score]"
+                      cachedDataType="i4"
+                      cachedName="Reviewer_Score"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Score]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Score]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[stay_length]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="stay_length"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[stay_length]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[stay_length]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[posted_via_mobile]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="posted_via_mobile"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[posted_via_mobile]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[posted_via_mobile]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[room_type]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="room_type"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[room_type]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[room_type]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[guest_category]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="guest_category"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[guest_category]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[guest_category]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[trip_category]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="trip_category"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[trip_category]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[trip_category]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[days_since_review]"
+                      cachedDataType="i4"
+                      cachedName="days_since_review"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[days_since_review]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[days_since_review]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[row_count]"
+                      cachedDataType="i4"
+                      cachedName="row_count"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[row_count]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[row_count]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      cachedDataType="i4"
+                      cachedName="Total_Number_of_Reviews_Reviewer_Has_Given"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Address]"
+                      codePage="1250"
+                      dataType="str"
+                      length="256"
+                      name="Hotel_Address" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Additional_Number_of_Scoring]"
+                      dataType="i4"
+                      name="Additional_Number_of_Scoring" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
+                      dataType="dbDate"
+                      name="Review_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
+                      dataType="i4"
+                      name="Average_Score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="310"
+                      name="Hotel_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Nationality]"
+                      codePage="1250"
+                      dataType="str"
+                      length="260"
+                      name="Reviewer_Nationality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
+                      dataType="i4"
+                      name="Review_Total_Negative_Word_Counts" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews]"
+                      dataType="i4"
+                      name="Total_Number_of_Reviews" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
+                      dataType="i4"
+                      name="Review_Total_Positive_Word_Counts" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Score]"
+                      dataType="i4"
+                      name="Reviewer_Score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[stay_length]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="stay_length" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[posted_via_mobile]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="posted_via_mobile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[room_type]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="room_type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[guest_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="guest_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[trip_category]"
+                      codePage="1250"
+                      dataType="str"
+                      length="100"
+                      name="trip_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[days_since_review]"
+                      dataType="i4"
+                      name="days_since_review" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[row_count]"
+                      dataType="i4"
+                      name="row_count" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
+                      dataType="i4"
+                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1133,7 +1388,7 @@ where [refTable].[stay_length] = ? and [refTable].[posted_via_mobile] = ? and [r
                 <output
                   refId="Package\Data Flow Task\Lookup Stay Description.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Data Flow Task\Lookup Stay Description.Inputs[Lookup Input]">
@@ -1144,7 +1399,7 @@ where [refTable].[stay_length] = ? and [refTable].[posted_via_mobile] = ? and [r
                       errorOrTruncationOperation="Copy Column"
                       lineageId="Package\Data Flow Task\Lookup Stay Description.Outputs[Lookup Match Output].Columns[stay_description_id]"
                       name="stay_description_id"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
@@ -1291,7 +1546,7 @@ where [refTable].[Review_Date] = ?</property>
                 <output
                   refId="Package\Data Flow Task\Lookup Time Dimension.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Data Flow Task\Lookup Time Dimension.Inputs[Lookup Input]">
@@ -1302,7 +1557,7 @@ where [refTable].[Review_Date] = ?</property>
                       errorOrTruncationOperation="Copy Column"
                       lineageId="Package\Data Flow Task\Lookup Time Dimension.Outputs[Lookup Match Output].Columns[time_id]"
                       name="time_id"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
@@ -1565,16 +1820,15 @@ where [refTable].[Review_Date] = ?</property>
       ,Reviewer_Nationality
       ,avg(Review_Total_Negative_Word_Counts) 'Review_Total_Negative_Word_Counts'
       ,avg(Total_Number_of_Reviews) 'Total_Number_of_Reviews'
-      ,avg(Review_Total_Positive_Word_Counts) 'Review_Total_Positive_Word_Counts'
+      ,avg(Review_Total_Positive_Word_Counts) 'Review_Total_Positive_Word_Counts',avg(Total_Number_of_Reviews_Reviewer_Has_Given) 'Total_Number_of_Reviews_Reviewer_Has_Given'
       ,avg(Reviewer_Score) 'Reviewer_Score'
-      ,stay_length
+      ,     stay_length
       ,posted_via_mobile
       ,room_type
       ,guest_category
       ,trip_category
       ,avg(days_since_review) 'days_since_review'
       ,sum(row_count) 'row_count'
-	  ,avg(Total_Number_of_Reviews_Reviewer_Has_Given) 'Total_Number_of_Reviews_Reviewer_Has_Given'
   FROM HotelReviews
   group by
   Hotel_Address
@@ -1586,7 +1840,7 @@ where [refTable].[Review_Date] = ?</property>
       ,Review_Total_Negative_Word_Counts
       ,Total_Number_of_Reviews
       ,Review_Total_Positive_Word_Counts
-      ,Total_Number_of_Reviews_Reviewer_Has_Given
+,Total_Number_of_Reviews_Reviewer_Has_Given
       ,Reviewer_Score
       ,stay_length
       ,posted_via_mobile
@@ -2477,261 +2731,6 @@ where [refTable].[Review_Date] = ?</property>
               </inputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file"
-              componentClassID="Microsoft.FlatFileDestination"
-              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Destination"
-              localeId="1045"
-              name="Write rows that could not be inserted into facts table - Flat file"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether the data will overwrite or append to the destination file."
-                  name="Overwrite">true</property>
-                <property
-                  dataType="System.Null"
-                  description="Specifies the text to write to the destination file before any data is written."
-                  expressionType="Notify"
-                  name="Header" />
-                <property
-                  dataType="System.Boolean"
-                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
-                  name="EscapeQualifier">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  name="FlatFileConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input]"
-                  hasSideEffects="true"
-                  name="Flat File Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Hotel_Address]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="256"
-                      cachedName="Hotel_Address"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Address]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hotel_Address]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Additional_Number_of_Scoring]"
-                      cachedDataType="i4"
-                      cachedName="Additional_Number_of_Scoring"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Additional_Number_of_Scoring]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Additional_Number_of_Scoring]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Review_Date]"
-                      cachedDataType="dbDate"
-                      cachedName="Review_Date"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Average_Score]"
-                      cachedDataType="i4"
-                      cachedName="Average_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Average_Score]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Hotel_Name]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="310"
-                      cachedName="Hotel_Name"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Name]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hotel_Name]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Reviewer_Nationality]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="260"
-                      cachedName="Reviewer_Nationality"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Nationality]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Nationality]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Review_Total_Negative_Word_Counts]"
-                      cachedDataType="i4"
-                      cachedName="Review_Total_Negative_Word_Counts"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Total_Negative_Word_Counts]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Total_Number_of_Reviews]"
-                      cachedDataType="i4"
-                      cachedName="Total_Number_of_Reviews"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Review_Total_Positive_Word_Counts]"
-                      cachedDataType="i4"
-                      cachedName="Review_Total_Positive_Word_Counts"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Review_Total_Positive_Word_Counts]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Reviewer_Score]"
-                      cachedDataType="i4"
-                      cachedName="Reviewer_Score"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Score]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Reviewer_Score]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[stay_length]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="stay_length"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[stay_length]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[stay_length]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[posted_via_mobile]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="posted_via_mobile"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[posted_via_mobile]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[posted_via_mobile]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[room_type]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="room_type"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[room_type]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[room_type]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[guest_category]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="guest_category"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[guest_category]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[guest_category]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[trip_category]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="trip_category"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[trip_category]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[trip_category]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[days_since_review]"
-                      cachedDataType="i4"
-                      cachedName="days_since_review"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[days_since_review]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[days_since_review]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[row_count]"
-                      cachedDataType="i4"
-                      cachedName="row_count"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[row_count]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[row_count]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]"
-                      cachedDataType="i4"
-                      cachedName="Total_Number_of_Reviews_Reviewer_Has_Given"
-                      externalMetadataColumnId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total_Number_of_Reviews_Reviewer_Has_Given]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Address]"
-                      codePage="1250"
-                      dataType="str"
-                      length="256"
-                      name="Hotel_Address" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Additional_Number_of_Scoring]"
-                      dataType="i4"
-                      name="Additional_Number_of_Scoring" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Review_Date]"
-                      dataType="dbDate"
-                      name="Review_Date" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Average_Score]"
-                      dataType="i4"
-                      name="Average_Score" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Hotel_Name]"
-                      codePage="1250"
-                      dataType="str"
-                      length="310"
-                      name="Hotel_Name" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Nationality]"
-                      codePage="1250"
-                      dataType="str"
-                      length="260"
-                      name="Reviewer_Nationality" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Negative_Word_Counts]"
-                      dataType="i4"
-                      name="Review_Total_Negative_Word_Counts" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews]"
-                      dataType="i4"
-                      name="Total_Number_of_Reviews" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Review_Total_Positive_Word_Counts]"
-                      dataType="i4"
-                      name="Review_Total_Positive_Word_Counts" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Reviewer_Score]"
-                      dataType="i4"
-                      name="Reviewer_Score" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[stay_length]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="stay_length" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[posted_via_mobile]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="posted_via_mobile" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[room_type]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="room_type" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[guest_category]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="guest_category" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[trip_category]"
-                      codePage="1250"
-                      dataType="str"
-                      length="100"
-                      name="trip_category" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[days_since_review]"
-                      dataType="i4"
-                      name="days_since_review" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[row_count]"
-                      dataType="i4"
-                      name="row_count" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input].ExternalColumns[Total_Number_of_Reviews_Reviewer_Has_Given]"
-                      dataType="i4"
-                      name="Total_Number_of_Reviews_Reviewer_Has_Given" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-            </component>
-            <component
               refId="Package\Data Flow Task\Write to file facts not matched by Hotel"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -3180,31 +3179,6 @@ where [refTable].[Review_Date] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Error Output]"
-              endId="Package\Data Flow Task\Write unmatched by Comment Characteristic.Inputs[Flat File Destination Input]"
-              name="Lookup Error Output"
-              startId="Package\Data Flow Task\Lookup Comment Characteristic.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Lookup Error Output1]"
-              endId="Package\Data Flow Task\Write to file facts not matched by Hotel.Inputs[Flat File Destination Input]"
-              name="Lookup Error Output"
-              startId="Package\Data Flow Task\Lookup Hotel.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Lookup Error Output2]"
-              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
-              name="Lookup Error Output"
-              startId="Package\Data Flow Task\Lookup Reviewer.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Lookup Error Output3]"
-              endId="Package\Data Flow Task\Unmatched Stay Description.Inputs[Flat File Destination Input]"
-              name="Lookup Error Output"
-              startId="Package\Data Flow Task\Lookup Stay Description.Outputs[Lookup Error Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Lookup Error Output4]"
-              endId="Package\Data Flow Task\Unmatched Time Dimension.Inputs[Flat File Destination Input]"
-              name="Lookup Error Output"
-              startId="Package\Data Flow Task\Lookup Time Dimension.Outputs[Lookup Error Output]" />
-            <path
               refId="Package\Data Flow Task.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task\Lookup Hotel.Inputs[Lookup Input]"
               name="Lookup Match Output"
@@ -3230,8 +3204,33 @@ where [refTable].[Review_Date] = ?</property>
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup Time Dimension.Outputs[Lookup Match Output]" />
             <path
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output]"
+              endId="Package\Data Flow Task\Write unmatched by Comment Characteristic.Inputs[Flat File Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup Comment Characteristic.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output1]"
+              endId="Package\Data Flow Task\Write to file facts not matched by Hotel.Inputs[Flat File Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup Hotel.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output2]"
+              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup Reviewer.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output3]"
+              endId="Package\Data Flow Task\Unmatched Stay Description.Inputs[Flat File Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup Stay Description.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output4]"
+              endId="Package\Data Flow Task\Unmatched Time Dimension.Inputs[Flat File Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup Time Dimension.Outputs[Lookup No Match Output]" />
+            <path
               refId="Package\Data Flow Task.Paths[OLE DB Destination Error Output]"
-              endId="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file.Inputs[Flat File Destination Input]"
+              endId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input]"
               name="OLE DB Destination Error Output"
               startId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
             <path
@@ -3334,6 +3333,14 @@ where [refTable].[Review_Date] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="228,42"
+          Id="Package\Data Flow Task\Lookup Comment Characteristic"
+          TopLeft="23,112" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="1089,450" />
+        <NodeLayout
           Size="150,42"
           Id="Package\Data Flow Task\OLE DB Source"
           TopLeft="5,4" />
@@ -3341,26 +3348,6 @@ where [refTable].[Review_Date] = ?</property>
           Size="141,42"
           Id="Package\Data Flow Task\Lookup Hotel"
           TopLeft="363,7" />
-        <NodeLayout
-          Size="212,42"
-          Id="Package\Data Flow Task\Unmatched Stay Description"
-          TopLeft="865,143" />
-        <NodeLayout
-          Size="211,42"
-          Id="Package\Data Flow Task\Unmatched Time Dimension"
-          TopLeft="942,315" />
-        <NodeLayout
-          Size="265,42"
-          Id="Package\Data Flow Task\Write to file facts not matched by Hotel"
-          TopLeft="337,139" />
-        <NodeLayout
-          Size="290,42"
-          Id="Package\Data Flow Task\Write unmatched by Comment Characteristic"
-          TopLeft="6,227" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Data Flow Task\Lookup Reviewer"
-          TopLeft="633,7" />
         <NodeLayout
           Size="192,42"
           Id="Package\Data Flow Task\Lookup Time Dimension"
@@ -3370,91 +3357,9 @@ where [refTable].[Review_Date] = ?</property>
           Id="Package\Data Flow Task\Lookup Stay Description"
           TopLeft="873,8" />
         <NodeLayout
-          Size="228,42"
-          Id="Package\Data Flow Task\Lookup Comment Characteristic"
-          TopLeft="23,112" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="1089,450" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Data Flow Task\Flat File Destination"
-          TopLeft="647,141" />
-        <NodeLayout
-          Size="373,42"
-          Id="Package\Data Flow Task\Write rows that could not be inserted into facts table - Flat file"
-          TopLeft="568.5,471.5" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="80,46">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="20.3333333333333,66"
-              Start="0,0"
-              End="20.3333333333333,58.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.3240418118467" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.3240418118467"
-                    Point2="0,39.3240418118467"
-                    Point3="4,39.3240418118467" />
-                  <mssgle:LineSegment
-                    End="16.3333333333333,39.3240418118467" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.3333333333333,39.3240418118467"
-                    Point2="20.3333333333333,39.3240418118467"
-                    Point3="20.3333333333333,43.3240418118467" />
-                  <mssgle:LineSegment
-                    End="20.3333333333333,58.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Destination Error Output]"
-          TopLeft="1089,471">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-147.5,21.5"
-              Start="0,0"
-              End="-140,21.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-69.75,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-69.75,0"
-                    Point2="-73.75,0"
-                    Point3="-73.75,4" />
-                  <mssgle:LineSegment
-                    End="-73.75,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-73.75,17.5"
-                    Point2="-73.75,21.5"
-                    Point3="-77.75,21.5" />
-                  <mssgle:LineSegment
-                    End="-140,21.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-146.95890625,-17.43359375,146.4178125,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="159,42"
+          Id="Package\Data Flow Task\Lookup Reviewer"
+          TopLeft="633,7" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output4]"
           TopLeft="1195,64">
@@ -3607,12 +3512,50 @@ where [refTable].[Review_Date] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="70.6419466145835,-26.3333333333333,96.3827734375,11.609375"
+              BoundingBox="70.6419466145833,-26.3333333333333,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Error Output]"
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="80,46">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.3333333333333,66"
+              Start="0,0"
+              End="20.3333333333333,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.3240418118467" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.3240418118467"
+                    Point2="0,39.3240418118467"
+                    Point3="4,39.3240418118467" />
+                  <mssgle:LineSegment
+                    End="16.3333333333333,39.3240418118467" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.3333333333333,39.3240418118467"
+                    Point2="20.3333333333333,39.3240418118467"
+                    Point3="20.3333333333333,43.3240418118467" />
+                  <mssgle:LineSegment
+                    End="20.3333333333333,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="290,42"
+          Id="Package\Data Flow Task\Write unmatched by Comment Characteristic"
+          TopLeft="6,227" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output]"
           TopLeft="137,154">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3643,12 +3586,16 @@ where [refTable].[Review_Date] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-38.86638671875,41.5,91.7327734375,11.609375"
+              BoundingBox="-48.80638671875,41.5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="265,42"
+          Id="Package\Data Flow Task\Write to file facts not matched by Hotel"
+          TopLeft="337,139" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Error Output1]"
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output1]"
           TopLeft="455.666666666667,49">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3679,12 +3626,16 @@ where [refTable].[Review_Date] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-38.9497200520833,41.6058906030856,91.7327734375,11.609375"
+              BoundingBox="-48.8897200520833,41.6058906030856,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="647,141" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Error Output2]"
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output2]"
           TopLeft="712.5,49">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3715,12 +3666,16 @@ where [refTable].[Review_Date] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-35.61638671875,51,91.7327734375,11.609375"
+              BoundingBox="-45.55638671875,51,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Data Flow Task\Unmatched Stay Description"
+          TopLeft="865,143" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Error Output3]"
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output3]"
           TopLeft="970.25,50">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3739,12 +3694,16 @@ where [refTable].[Review_Date] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-45.86638671875,36.9453125,91.7327734375,11.609375"
+              BoundingBox="-55.80638671875,36.9453125,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Data Flow Task\Unmatched Time Dimension"
+          TopLeft="942,315" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Error Output4]"
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output4]"
           TopLeft="1164.33333333333,64">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3775,13 +3734,89 @@ where [refTable].[Review_Date] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-104.283053385417,106.644628099173,91.7327734375,11.609375"
+              BoundingBox="-114.223053385417,106.644628099173,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Data Flow Task\Flat File Destination 1"
+          TopLeft="731,474" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Destination Error Output]"
+          TopLeft="1089,471">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-177,24"
+              Start="0,0"
+              End="-169.5,24">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-84.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-84.5,0"
+                    Point2="-88.5,0"
+                    Point3="-88.5,4" />
+                  <mssgle:LineSegment
+                    End="-88.5,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-88.5,20"
+                    Point2="-88.5,24"
+                    Point3="-92.5,24" />
+                  <mssgle:LineSegment
+                    End="-169.5,24" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-161.70890625,-17.43359375,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Lookup Comment Characteristic">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[CommentCharacteristic]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
@@ -3796,35 +3831,12 @@ where [refTable].[Review_Date] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Hotel]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup Reviewer">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
           type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Reviewer]</Value>
+          type="q3:string">[dbo].[Hotel]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -3883,38 +3895,25 @@ where [refTable].[Review_Date] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup Comment Characteristic">
+    design-time-name="Package\Data Flow Task\Lookup Reviewer">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[CommentCharacteristic]</Value>
+          type="q3:string">[dbo].[Reviewer]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
