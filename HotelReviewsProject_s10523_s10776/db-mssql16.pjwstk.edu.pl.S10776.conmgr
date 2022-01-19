@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="db-mssql16.pjwstk.edu.pl.S10776"
+  DTS:DTSID="{D3AE7E0E-7A19-4925-873E-2B5B0BEB50FA}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=db-mssql16.pjwstk.edu.pl;Initial Catalog=S10776;Integrated Security=True;Application Name=SSIS-HotelReviewsProject_s10523_s10776-{D3AE7E0E-7A19-4925-873E-2B5B0BEB50FA}db-mssql16.pjwstk.edu.pl.S10776;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
