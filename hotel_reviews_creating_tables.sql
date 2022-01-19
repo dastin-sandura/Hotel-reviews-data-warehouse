@@ -59,7 +59,9 @@ CREATE TABLE CommentCharacteristic(
 
    total_positive_comments_word_count int, --max value 408, min 0
 
-   total_negative_comments_word_count int -- max 408 | min 0
+   total_negative_comments_word_count int, -- max 408 | min 0
+
+   review_emotionality varchar(8)
 )
 GO
 
