@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9ade3273-7bb1-47cf-b77c-316a50409e68" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fac849c1-b770-4497-bf56-24f7bf8d31f8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>S10523</ID>
   <Name>S10523</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="29" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="3801" scrolltop="2181" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="29501" y="16801" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4980" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="30348" y="10689" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -74,7 +74,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="20" top="5760" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Hotel" left="20" top="5760" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
             </control>
@@ -85,7 +85,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="5962" logicalid="24" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="5962" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -103,7 +103,7 @@
               <point x="5420" y="6361" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="9671" top="4863" logicalid="25" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9671" top="4863" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -123,7 +123,7 @@
               <point x="9971" y="5261" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="6845" top="8821" logicalid="26" controlid="15" masterid="0" hint1="0" hint2="0" width="949" height="3491" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6845" top="8821" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="949" height="3491" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -143,7 +143,7 @@
               <point x="7145" y="9121" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="5442" top="1803" logicalid="27" controlid="16" masterid="0" hint1="0" hint2="0" width="903" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5442" top="1803" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="903" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -163,7 +163,7 @@
               <point x="6045" y="4702" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="3976" top="8821" logicalid="28" controlid="17" masterid="0" hint1="0" hint2="0" width="2369" height="3491" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3976" top="8821" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="2369" height="3491" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -200,11 +200,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>3801</Value>
+      <Value>-4980</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>2181</Value>
+      <Value>-5000</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -222,130 +222,130 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="7786a13f-34a2-4c40-a2b9-05d01878305b">
+    <Dimension dwd:design-time-name="16a93292-c713-4405-837c-53382d0e91bd">
       <ID>Hotel</ID>
       <Name>Hotel</Name>
       <DimensionID>Hotel</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="a8616978-9bdc-4a4a-adb1-50246874869d">
+        <Attribute dwd:design-time-name="535b3626-0faa-4f24-8b10-b6f25c66b8b8">
           <AttributeID>Hotel Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="648f440b-f4d1-4e1a-9a70-e352c9a745b4">
+        <Attribute dwd:design-time-name="fc3e2069-c47d-4b78-9bb7-d7d011c2fbf8">
           <AttributeID>Hotel Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="65402470-2ec3-4801-9c68-764ea4182946">
+        <Attribute dwd:design-time-name="7c45e54f-a021-4694-98e0-491a79c4a6dd">
           <AttributeID>Hotel Address</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="39754911-2e8d-407c-9d0a-5840dc18b474">
+    <Dimension dwd:design-time-name="6610490b-2f87-484a-b019-5435b46ba8d7">
       <ID>Time</ID>
       <Name>Time</Name>
       <DimensionID>Time</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="e1ff3e30-e478-4572-8a51-9865a6520eb0">
+        <Attribute dwd:design-time-name="0f02ba35-fec1-451a-ac2a-bf4ebd837c8f">
           <AttributeID>Time Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7eeb5a94-f856-4f1c-9301-59ee6f55a990">
+        <Attribute dwd:design-time-name="1ba0fc32-a370-44a1-9b24-9ca0790095f9">
           <AttributeID>Review Date</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ed3c511e-fb32-465f-8bbe-71b5762d879f">
+        <Attribute dwd:design-time-name="2c4ef388-120b-4cb8-9f6e-2407f32a251d">
           <AttributeID>Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fa620c28-4ed5-43bf-8d68-49104f22f3c8">
+        <Attribute dwd:design-time-name="cd054299-6bb6-40ad-8f61-afeb3f513eb4">
           <AttributeID>Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ebea9a0b-2c13-477a-b4cc-ebd03b2cdf35">
+        <Attribute dwd:design-time-name="7c47cf0d-9d22-45b9-a220-624b9e1e96cd">
           <AttributeID>Quarter</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="356637b5-3a06-4e32-b424-5e7f346f88f6">
+        <Attribute dwd:design-time-name="d839816d-ace0-4a1e-9b4c-5e0bef93c3d1">
           <AttributeID>Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="14a93501-fce1-467a-9f70-62f5f9746acd">
+        <Attribute dwd:design-time-name="54afc9d5-d82a-4bd8-8a90-a23682bbd027">
           <AttributeID>Week Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="49e84b63-c3e9-4ccc-bbd3-0b2e1deff9e6">
+        <Attribute dwd:design-time-name="07e941fe-044f-4339-914f-eb4c39ee0748">
           <AttributeID>Month Name PL</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8ee37aeb-dbde-4a81-8f52-2af3fa239fb8">
+        <Attribute dwd:design-time-name="abad6a7f-45cf-4e90-b988-80069d8f7b47">
           <AttributeID>Month Name ENG</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6898ab4d-ce60-4569-b141-319b08588644">
+        <Attribute dwd:design-time-name="7770adff-0390-4a57-a0fd-ab2d7c032d9e">
           <AttributeID>Week Name PL</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fc072fbe-4322-4d47-93c5-83b8187355d6">
+        <Attribute dwd:design-time-name="691883c5-b471-46a1-aef1-a638fb7499e5">
           <AttributeID>Week Name ENG</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="d073ddfb-de13-4199-a0e7-a6678f0bc208">
+        <Hierarchy dwd:design-time-name="ca07073b-4727-45af-ac90-8c62ceda5260">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="d4df4509-6810-4734-a64b-26bfbc9e3f13">
+    <Dimension dwd:design-time-name="1086bafe-bccc-432e-8bcd-65bb748b403f">
       <ID>Reviewer</ID>
       <Name>Reviewer</Name>
       <DimensionID>Reviewer</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="76e53303-4779-4834-9e95-da6eefe9c08c">
+        <Attribute dwd:design-time-name="2faf2bf7-6b77-485a-b6ee-79ba97bcb83a">
           <AttributeID>Reviewer Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="70bde4fb-b665-41e7-a566-44631f166983">
+        <Attribute dwd:design-time-name="4bd1f38f-5b68-41e7-87aa-50dde33c2289">
           <AttributeID>Reviewer Nationality</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="329e88e5-5beb-47c0-8e62-c3f3e4444da3">
+        <Attribute dwd:design-time-name="42d0dfec-f08c-42d2-be0d-1dd96c550dd7">
           <AttributeID>Total Number Of Reviews Reviewer Has Given</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="36c971d4-baef-43d4-8c58-89e08a7fe446">
+    <Dimension dwd:design-time-name="b523ed78-ca71-4a6a-aa67-d688f683d2ab">
       <ID>Comment Characteristic</ID>
       <Name>Comment Characteristic</Name>
       <DimensionID>Comment Characteristic</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="fbd12f91-1a04-4fb3-87c9-47e17322df7c">
+        <Attribute dwd:design-time-name="8949913a-da8a-4a40-a859-c6fc1df8955e">
           <AttributeID>Comment Characteristic Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="17998661-c3bb-4dad-be2c-ea9c4ca643ec">
+        <Attribute dwd:design-time-name="d90f9368-1001-4343-89d4-32bdc258ada3">
           <AttributeID>Total Positive Comments Word Count</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f7fb6dc4-9c0d-4639-bede-cbf6b101dae1">
+        <Attribute dwd:design-time-name="45113820-be72-403d-8c5b-a56357fe9d4e">
           <AttributeID>Total Negative Comments Word Count</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="285c8b00-72c8-48fb-805a-8d5b85bd1dc2">
+        <Attribute dwd:design-time-name="63c71189-0933-4317-8620-ca6407b2db8a">
           <AttributeID>Review Emotionality</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="4d57550d-ea80-44b7-afdc-b3d166498be8">
+    <Dimension dwd:design-time-name="4de048bb-77a8-4da5-917c-56db86326f82">
       <ID>Stay Description</ID>
       <Name>Stay Description</Name>
       <DimensionID>Stay Description</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="82ec8273-9a85-4397-9f03-ec42ab144af9">
+        <Attribute dwd:design-time-name="84f5fc76-7675-468d-ae51-bb2be3f9cdae">
           <AttributeID>Stay Description Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="186c084a-4869-4808-b6d9-34b4fe346baa">
+        <Attribute dwd:design-time-name="8467f1ea-6c1d-49bc-afe1-ac76db84532c">
           <AttributeID>Stay Length</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5c3fb0ad-c21a-4e75-83eb-8f39b062d852">
+        <Attribute dwd:design-time-name="3293f2a5-1092-46f5-8f13-9e8a47f27b14">
           <AttributeID>Trip Category</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="914fe7ff-3467-42c3-9db3-194b42a2a9a3">
+        <Attribute dwd:design-time-name="519156a4-1bbe-412b-8446-40149d5ac3ac">
           <AttributeID>Guest Category</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="bad4d594-fe3b-4b4e-b867-9c3fbfcbd804">
+        <Attribute dwd:design-time-name="fee6656c-8a45-4319-a3ff-a22e7cfe781f">
           <AttributeID>Room Type</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3d24d6c3-f09b-4453-a61c-91c5123bc20a">
+        <Attribute dwd:design-time-name="83bcbd52-8b6a-4ce5-9614-ab5aa9abbf88">
           <AttributeID>Posted Via Mobile</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="948ba7ef-8d23-440e-9921-17b83286b767">
+    <MeasureGroup dwd:design-time-name="c5f5881d-0a26-4283-a6e5-0243f0e5f06d">
       <ID>Hotel Review</ID>
       <Name>Hotel Review</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -353,47 +353,47 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="fb406829-064d-4e29-a04e-3314bdb59f01">
+        <Measure dwd:design-time-name="decc6136-687b-490e-a17e-33d75411d95f">
           <ID>Numerical Score</ID>
           <Name>Numerical Score</Name>
-          <Source dwd:design-time-name="061a1ee9-9269-4e2f-97f8-19283f325811">
+          <Source dwd:design-time-name="8e0b3209-fbc3-47f7-906b-458326f14819">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="1ac25c2d-eb53-4616-8af3-bf4141196c70">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="02c7508b-cc81-4d9b-863d-2786e412c3fd">
               <TableID>dbo_Hotel_Review</TableID>
               <ColumnID>numerical_score</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="6285b07b-cc1b-47ee-842c-998a28fc1120">
+        <Measure dwd:design-time-name="17ffb059-3283-423c-8c6e-5fd44ba79ce2">
           <ID>Upvotes Number</ID>
           <Name>Upvotes Number</Name>
-          <Source dwd:design-time-name="c050a842-0504-457d-82ce-072d25701296">
+          <Source dwd:design-time-name="f33a1a99-ef8c-4a14-b41c-0ed0f4aa84fc">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="e08174a3-7b11-44b4-bd89-6d64f0e8f814">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="33129da0-ba23-4388-aee7-fb0967a83b11">
               <TableID>dbo_Hotel_Review</TableID>
               <ColumnID>upvotes_number</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="b287ca7d-706d-4366-8c4b-20cf5b6f1a74">
+        <Measure dwd:design-time-name="fa93642c-bc7a-4546-8e2c-6e2baf7f6f5f">
           <ID>Row Count</ID>
           <Name>Row Count</Name>
-          <Source dwd:design-time-name="4d4f34e6-e0fd-4bbe-a4b3-2cf5f3d35d37">
+          <Source dwd:design-time-name="a43af3dc-eca6-4447-9f0f-b6479a6f135f">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="a8b5d91f-0f31-4766-a8e7-dbd1817da46d">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f00e366e-60f8-442d-8d48-afb36d14b8e2">
               <TableID>dbo_Hotel_Review</TableID>
               <ColumnID>row_count</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="8d98d6c0-800b-42f1-a035-ca359ccd6e03">
+        <Measure dwd:design-time-name="4e29fdf8-0adf-4ffa-b438-4e7238c55bf9">
           <ID>Hotel Review Count</ID>
           <Name>Hotel Review Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="74c9424e-fb28-4a6c-a964-a4a425d5ed7d">
+          <Source dwd:design-time-name="d275edeb-07c6-4d9a-b26c-4a0cbe187dba">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="9f5106f6-0582-494d-b961-e52ff19e7ecc">
+            <Source xsi:type="RowBinding" dwd:design-time-name="cda017dc-0458-4cd3-a315-36bd6c506737">
               <TableID>dbo_Hotel_Review</TableID>
             </Source>
           </Source>
@@ -402,15 +402,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="23237f6b-7679-4d4e-ac3f-9fbe8c90ab0f">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f7cab5a0-fa14-45bf-a379-85cc57bf3956">
           <CubeDimensionID>Hotel</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="6f7d6893-9bbb-406b-8392-db27553c1b64">
+            <Attribute dwd:design-time-name="7b9b3f4f-7f8d-47f5-b84c-4900c3dff692">
               <AttributeID>Hotel Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0612a799-a9fb-4ef5-917e-183d7dc6c56a">
+                <KeyColumn dwd:design-time-name="dcd2c2bb-6b45-48bd-96c0-8d9cf6abd003">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="41b5b0a9-5682-4e7c-81b0-774d8a2e4d87">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f10890e-5d74-4565-bc57-716a97f3cbaa">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>hotel_id</ColumnID>
                   </Source>
@@ -420,15 +420,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="90171964-8f82-4fb1-a0f7-d4b14dabb2d8">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="34755397-dcbe-41f7-822d-5bb29b975d04">
           <CubeDimensionID>Time</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="4b6ae634-bd12-4eaa-adc2-04118ef2747b">
+            <Attribute dwd:design-time-name="aa3732b3-04b7-4ee0-943e-ee70c7e5c3c9">
               <AttributeID>Time Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="3ee22e72-2fa8-4ef4-9f2c-5d9fcd437495">
+                <KeyColumn dwd:design-time-name="73d33c3d-453d-4bb3-98b5-6f9c3ad24456">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a1b70129-f006-4e9b-8c65-0c2c2d9b09eb">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="31db8bfa-cbdf-433e-a688-7b182dba72a7">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>time_id</ColumnID>
                   </Source>
@@ -438,15 +438,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a3f3b807-13d8-4440-8113-0b35cb555ef3">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a1274bde-cb1f-4341-aa10-51238b7cd765">
           <CubeDimensionID>Reviewer</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="1bf224d6-2c7a-42e7-917e-7bbae7dfb806">
+            <Attribute dwd:design-time-name="4105ac43-623d-4ab1-9980-dc8db5e00df2">
               <AttributeID>Reviewer Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="2b453a43-ad5e-46d2-9593-5aec25c5fc45">
+                <KeyColumn dwd:design-time-name="96bc35ca-392d-425a-9407-c9b6ea9cc38d">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19cba738-8b33-422f-96fe-fa98ad520690">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f6bde9f7-91a6-4d1b-8a49-103905de2799">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>reviewer_id</ColumnID>
                   </Source>
@@ -456,15 +456,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4daf39d5-896f-4639-b226-ed635ae082ee">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8220666b-ec9d-43d3-a7f9-3841d6917b0c">
           <CubeDimensionID>Comment Characteristic</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="89dfd727-697a-4978-aa3d-b98374204a0e">
+            <Attribute dwd:design-time-name="ceb84222-0fae-4a08-b1f5-40c66846fa02">
               <AttributeID>Comment Characteristic Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b6f75051-4ea6-42ce-81ee-48963cbe9434">
+                <KeyColumn dwd:design-time-name="fc52c7c3-3ae3-4f61-a7b1-fcaa56ed4a2f">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a67a0182-1aa3-49a3-9b97-df185c867606">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1170f241-dca2-4f4d-95ae-3d4c6c8f7af2">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>comment_characteristic_id</ColumnID>
                   </Source>
@@ -474,15 +474,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="747de9fa-fd02-42b7-8aa8-079116dfedd9">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="78fea1fc-79f8-4e72-9ac6-db9ea70abf24">
           <CubeDimensionID>Stay Description</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="6ef2d495-025e-4b1d-8640-41df651cd156">
+            <Attribute dwd:design-time-name="adde48a7-f15a-4ee6-a34c-e4efe9e0f159">
               <AttributeID>Stay Description Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="a0a4114f-f9a4-4d2f-ba8d-203eb170b90a">
+                <KeyColumn dwd:design-time-name="b857ef5e-300b-4fb4-bed7-63d816e1f328">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9353db9d-5e6d-4851-b53a-9843a37cd57d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dd162e7a-eda3-44d2-bc45-f0f236fec0e8">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>stay_description_id</ColumnID>
                   </Source>
@@ -496,7 +496,46 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="3b245fe0-b0cf-4b9b-bb55-d8d8ba42714e">
+  <Source dwd:design-time-name="6bc465b9-cef7-4ac5-a9e3-07fc838cc956">
     <DataSourceViewID>S10523</DataSourceViewID>
   </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="1cf437e5-6f08-42c3-99ad-c4e2faaf1054">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg Hotel Score]
+ AS [Measures].[Numerical Score]/[Measures].[Row Count], 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculations'  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Calculated Hotel Score]
+ AS ([Measures].[Avg Hotel Score]^[Measures].[Avg Hotel Score])*([Measures].[Row Count]^0.5), 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculations'  ; 
+CREATE DYNAMIC SET CURRENTCUBE.[Couples]
+ AS [Stay Description].[Guest Category].&amp;[Couple], DISPLAY_FOLDER = 'Sets'  ; 
+CREATE DYNAMIC SET CURRENTCUBE.[Other Guest Categories]
+ AS UNION ([Stay Description].[Guest Category].&amp;[Family with older children],[Stay Description].[Guest Category].&amp;[Family with young children],[Stay Description].[Guest Category].&amp;[Group],[Stay Description].[Guest Category].&amp;[Solo traveler]), DISPLAY_FOLDER = 'Sets'  ;     
+CREATE MEMBER CURRENTCUBE.[Measures].[Review Count Category]
+ AS 
+CASE 
+When ([Measures].[Hotel Review Count] &lt;105) 
+THEN "small"
+WHEN ([Measures].[Hotel Review Count] &lt;305) 
+THEN "medium"
+ELSE ("lorge")
+END, 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
 </Cube>
