@@ -538,4 +538,23 @@ VISIBLE = 1; </Text>
       </Commands>
     </MdxScript>
   </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="fe214d8a-694c-4720-b020-abe46b83bb4d">
+      <ID>KPI</ID>
+      <Name>Ceiling</Name>
+      <AssociatedMeasureGroupID>Hotel Review</AssociatedMeasureGroupID>
+      <Value>[Measures].[Avg Hotel Score]</Value>
+      <Goal>9.5</Goal>
+      <Status>CASE
+   WHEN KpiValue( "Ceiling" )/KpiGoal( "Ceiling" ) &gt;= 1 THEN 1
+   WHEN KpiValue( "Ceiling" )/KpiGoal( "Ceiling" ) &lt; 1
+    AND KpiValue( "Ceiling" )/KpiGoal( "Ceiling" ) &gt;= .85 THEN 0
+   ELSE -1
+END
+</Status>
+      <Trend>([Measures].[Avg Hotel Score]-9.5)/[Measures].[Avg Hotel Score]</Trend>
+      <TrendGraphic>Status Arrow - Ascending</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
 </Cube>
