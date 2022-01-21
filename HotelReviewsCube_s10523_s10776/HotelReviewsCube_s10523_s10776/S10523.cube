@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d1e93ab9-4cf5-4cfe-b450-eff5d90f4e9b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bbbba36f-1204-4f9d-a860-65fd523cfba2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>S10523</ID>
   <Name>S10523</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -222,130 +222,130 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="b034c0d2-e8e8-466a-abc2-3134fd4fdbdf">
+    <Dimension dwd:design-time-name="6ac3cbf9-f17c-457f-9a0a-6583710dbfd9">
       <ID>Hotel</ID>
       <Name>Hotel</Name>
       <DimensionID>Hotel</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="52670506-c69c-4287-80a6-b2b997653e77">
+        <Attribute dwd:design-time-name="6b5089c8-f7de-4628-8cb4-f9d9e3d89966">
           <AttributeID>Hotel Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="327fab80-1628-442e-8bb9-5bf0134dfd28">
+        <Attribute dwd:design-time-name="6b49ab2b-aca5-42c6-a893-b7e1a2e5b97d">
           <AttributeID>Hotel Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b5324518-df33-4dac-9710-c690b2bd8139">
+        <Attribute dwd:design-time-name="fd860a98-bc78-44a4-8a47-6765d1ff92e4">
           <AttributeID>Hotel Address</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="5621ece5-f45e-4bb5-94aa-660bcb6dc223">
+    <Dimension dwd:design-time-name="71dd1d95-cae4-4a29-bad1-e2deb8309ef7">
       <ID>Time</ID>
       <Name>Time</Name>
       <DimensionID>Time</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="9bd21478-b7a2-4ef2-8180-9db3aad14910">
+        <Attribute dwd:design-time-name="9f9f50e4-2b1c-47b3-913c-f2fc64a1965c">
           <AttributeID>Time Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="12f0ce21-ae3b-46fd-bdd3-3fcde522f2de">
+        <Attribute dwd:design-time-name="b9a04014-9323-4ef8-82c4-2455c7fe04b1">
           <AttributeID>Review Date</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="80ad0aee-a2ae-4e6b-88ed-5e2534977f56">
+        <Attribute dwd:design-time-name="590ed45c-41d2-475d-897d-724db959917d">
           <AttributeID>Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e5dcd215-cd32-4f48-b223-cc3ad7983460">
+        <Attribute dwd:design-time-name="9fe3b734-fd30-48a0-92a1-90533ae2b778">
           <AttributeID>Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7a53953d-4210-4dfb-b25b-b6c56f8debb1">
+        <Attribute dwd:design-time-name="b1ab3536-0449-421d-87db-789e72964c65">
           <AttributeID>Quarter</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6761eb06-3fd3-4805-8adb-df628771aabe">
+        <Attribute dwd:design-time-name="6c6af96e-b8e6-49f3-843f-c03d42b5e01b">
           <AttributeID>Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="04e2166b-c109-4ee1-9a04-d4a1c48bd4eb">
+        <Attribute dwd:design-time-name="ddb71af6-2067-48d2-a36c-a52d7fa61c0b">
           <AttributeID>Week Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4623610d-2abd-4b7b-955b-4304c157332c">
+        <Attribute dwd:design-time-name="f566f35c-408b-47fc-8798-b51fd08af9be">
           <AttributeID>Month Name PL</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="0bbabda0-9618-4e90-b09c-0b91923fc7aa">
+        <Attribute dwd:design-time-name="4e5a5f42-4d9a-4a50-9aa9-17bf5492ef50">
           <AttributeID>Month Name ENG</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9a8bfd55-92eb-4dad-a8a6-264cc4fb670c">
+        <Attribute dwd:design-time-name="34968d54-d0fa-4fe9-9599-1dec48b0acee">
           <AttributeID>Week Name PL</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fe33c8d6-e757-4ff5-8915-e38195bbca1b">
+        <Attribute dwd:design-time-name="7bb166a9-37d0-43f6-9a5d-fbaa1fd26075">
           <AttributeID>Week Name ENG</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="82d81ebd-50d6-4884-847f-50924bb528ad">
+        <Hierarchy dwd:design-time-name="f3148ba2-0e3b-49e8-b65d-8c6b68f6e0ec">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="fc5961f7-9f66-48df-b2ce-bf7d3310e93d">
+    <Dimension dwd:design-time-name="1dc1d3bd-1446-4c93-93be-a86c8da9509f">
       <ID>Reviewer</ID>
       <Name>Reviewer</Name>
       <DimensionID>Reviewer</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="30cbf63e-280a-4873-b55c-7c68f7ffd201">
+        <Attribute dwd:design-time-name="d2aa9186-8295-4b6a-8980-f7808cab7ccc">
           <AttributeID>Reviewer Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="407e74c8-6fea-4e6b-9cb0-3ce3f70363af">
+        <Attribute dwd:design-time-name="12e76e8f-0acd-46e2-b548-fe35a7d5d196">
           <AttributeID>Reviewer Nationality</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1f882218-c44f-42dc-a514-74fc7e0d499c">
+        <Attribute dwd:design-time-name="4e26e8e0-829f-42a5-9208-16296ef5e0dc">
           <AttributeID>Total Number Of Reviews Reviewer Has Given</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="505d6743-714c-4fa1-b2ce-f6ed95c01a78">
+    <Dimension dwd:design-time-name="f3b8a82a-6078-4f43-854b-adc073d909a8">
       <ID>Comment Characteristic</ID>
       <Name>Comment Characteristic</Name>
       <DimensionID>Comment Characteristic</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="11fcf833-41ba-4c52-9035-5a771e23f7f3">
+        <Attribute dwd:design-time-name="181c565c-f9fc-455a-81eb-07e910d533b0">
           <AttributeID>Comment Characteristic Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="086b43a2-f06c-4fc8-b0e6-9abac9dccc42">
+        <Attribute dwd:design-time-name="84289d60-5752-4bb6-96cb-a98688275b43">
           <AttributeID>Total Positive Comments Word Count</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ea27e134-5772-4ad7-8370-b188675b43fe">
+        <Attribute dwd:design-time-name="40681cc2-a310-450c-9519-08a5b656b728">
           <AttributeID>Total Negative Comments Word Count</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ea3e43bc-255e-41b4-8655-65d7ccd3a1e9">
+        <Attribute dwd:design-time-name="cbd68746-9abd-4008-99d6-bdcbd4d1b594">
           <AttributeID>Review Emotionality</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="74d31f14-fbfa-437b-b258-0075817deb7f">
+    <Dimension dwd:design-time-name="974e1ecd-9b2a-4415-92ef-1c7521a8da91">
       <ID>Stay Description</ID>
       <Name>Stay Description</Name>
       <DimensionID>Stay Description</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="686ed0d9-5fd2-495f-90e0-febc0fba264c">
+        <Attribute dwd:design-time-name="70aceb16-826d-4f8b-8513-70cb523fe25e">
           <AttributeID>Stay Description Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="363345ba-6689-45d0-839b-67d9001110a6">
+        <Attribute dwd:design-time-name="9875b221-83ae-479c-883f-76c7638352fc">
           <AttributeID>Stay Length</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5432b4ff-3084-47c5-9661-52d2e3fdf312">
+        <Attribute dwd:design-time-name="adcc76fe-b79a-42ef-b501-719260429e3d">
           <AttributeID>Trip Category</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6c6e018f-0916-43b5-b9ce-de6de701db6d">
+        <Attribute dwd:design-time-name="c861af1f-bf8e-4a69-870a-f12c12355dde">
           <AttributeID>Guest Category</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="db7494d5-544c-460f-b8d1-706efc6d4d37">
+        <Attribute dwd:design-time-name="3aca6e15-4669-4646-9728-32a58529dfd8">
           <AttributeID>Room Type</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f8abda08-34ae-4919-87bb-d5453fb751a7">
+        <Attribute dwd:design-time-name="1fac4330-54fc-447a-ac47-aff0dcce5030">
           <AttributeID>Posted Via Mobile</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="36ca57cc-6cb8-4aac-b46d-0c83091afa0d">
+    <MeasureGroup dwd:design-time-name="eaca0e5a-aeb8-4a93-80b3-44044fffc584">
       <ID>Hotel Review</ID>
       <Name>Hotel Review</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -353,47 +353,47 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="607c6b61-05dd-4c2c-9663-5605f2408dc1">
+        <Measure dwd:design-time-name="74739a1d-4ec8-4dd1-af31-9fa0c08c6bb3">
           <ID>Numerical Score</ID>
           <Name>Numerical Score</Name>
-          <Source dwd:design-time-name="cf6b2997-8ffa-4109-8c72-2986fc5d2702">
+          <Source dwd:design-time-name="0eaf0188-6160-43d2-8123-ffdb1aa0053e">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="389fa21b-5263-4850-9b45-ecd5a00ee2f0">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a9dd5c12-5f98-4ae9-baed-30e0d7988a15">
               <TableID>dbo_Hotel_Review</TableID>
               <ColumnID>numerical_score</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="91a51cdd-d132-43ee-94df-ac1d2f4b07cc">
+        <Measure dwd:design-time-name="26d6016e-74a8-41c7-a41d-b57a7fab88b6">
           <ID>Upvotes Number</ID>
           <Name>Upvotes Number</Name>
-          <Source dwd:design-time-name="f8635f26-baee-4d66-a824-386856d58473">
+          <Source dwd:design-time-name="b27fece9-596b-491d-92eb-08bbb26ba949">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="e5ce73c3-4557-4863-8639-717cff1eec56">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="280dfe4e-d9f8-4d40-bb4e-26d60eda4a74">
               <TableID>dbo_Hotel_Review</TableID>
               <ColumnID>upvotes_number</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="41ecebd9-5776-4e66-8d08-f75df2c8bee4">
+        <Measure dwd:design-time-name="16917936-ebde-474f-a00a-73e1cbb7e688">
           <ID>Row Count</ID>
           <Name>Row Count</Name>
-          <Source dwd:design-time-name="adc58938-a629-4834-b221-5549f103d7bf">
+          <Source dwd:design-time-name="c0b97e05-32f4-4da6-bb81-8de9fd0a7ecf">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="475a885c-a1a1-4162-b3c8-40107949e19b">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2bd8b895-c4b6-4b4f-b190-201a9a82874a">
               <TableID>dbo_Hotel_Review</TableID>
               <ColumnID>row_count</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="ee965734-65b3-45f4-8197-2747e7c258e3">
+        <Measure dwd:design-time-name="5c17d08e-1997-43e2-8157-1da0444a6f34">
           <ID>Hotel Review Count</ID>
           <Name>Hotel Review Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="f0ded8a9-29b3-426a-abd3-c3d72a5a8480">
+          <Source dwd:design-time-name="c3db3e9b-a209-4772-a8fc-3774827a3612">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="8aa43b5b-3178-4d62-8b62-f92250c59032">
+            <Source xsi:type="RowBinding" dwd:design-time-name="2563989a-da5f-4301-8d1c-130c513ca34a">
               <TableID>dbo_Hotel_Review</TableID>
             </Source>
           </Source>
@@ -402,15 +402,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e410bdeb-8fe5-4f2d-a7ca-89a10fe7c02c">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fd4f5833-2043-4ef4-aa63-09d3650fb8da">
           <CubeDimensionID>Hotel</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="6a71220f-d475-4439-b592-0d0165bf0100">
+            <Attribute dwd:design-time-name="1c0a960b-3363-4ad6-9b26-4e771e649170">
               <AttributeID>Hotel Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e0c0814c-729f-4cf3-8a8b-fc6c1622520d">
+                <KeyColumn dwd:design-time-name="9dd71075-6dd4-4775-a1e1-629c86d08815">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce373a3f-b2c2-46be-82ea-c94e822ef086">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3375e2b8-9f1a-46e9-897e-64da0d85d2e7">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>hotel_id</ColumnID>
                   </Source>
@@ -420,15 +420,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2090a630-5933-4e3d-8924-71bcc85ec2e9">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4543c5d2-6bed-4409-8c44-4f3212becb44">
           <CubeDimensionID>Time</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="1ccb47d6-1f91-472c-82ac-992a5ef20b17">
+            <Attribute dwd:design-time-name="cb9209bc-9a8f-4db7-bd2c-5a6e25050553">
               <AttributeID>Time Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="05c9c9a9-d315-4054-afe1-46b490e2b0dc">
+                <KeyColumn dwd:design-time-name="98bb63ee-5f5a-4a47-89a4-678cee1031a1">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c4447c72-9cfa-4017-9f77-d55519df2d2e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7b075df9-682a-438f-b923-f347497a3837">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>time_id</ColumnID>
                   </Source>
@@ -438,15 +438,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0ccbed75-8b7e-43c9-a1ab-5f0f03402ab7">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ce9a666-28c9-40a7-8187-2a8a64d5d4c0">
           <CubeDimensionID>Reviewer</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="7abb45f9-e658-47c5-a724-d66b5b00aa82">
+            <Attribute dwd:design-time-name="eb226c73-dcf9-4b96-9c85-e16e3e05e671">
               <AttributeID>Reviewer Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e926c08e-0b65-44c3-afe6-649f768c919b">
+                <KeyColumn dwd:design-time-name="1dbc4a1d-b32f-48d1-b8ca-83ab3d7c5fa6">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1369dee6-b7c3-4bab-a621-017ae5dd8e0c">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7da71cbf-941e-483a-ab3e-cccd00549af8">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>reviewer_id</ColumnID>
                   </Source>
@@ -456,15 +456,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e88aca32-dc0c-4d77-8d27-d1fcba60ca49">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d364a000-85e8-4225-8f9d-6df07aea29cd">
           <CubeDimensionID>Comment Characteristic</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9d29b76f-0dc3-4a1f-8901-3767c79bbb01">
+            <Attribute dwd:design-time-name="42147da2-1b89-4acb-b404-de844317193e">
               <AttributeID>Comment Characteristic Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="fc8b3f1b-9427-41fc-88e5-caa9f9da2993">
+                <KeyColumn dwd:design-time-name="06319dfe-9ac1-4e65-b605-c629ce41d9c4">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7d97e10c-95f0-41e3-8490-e1f0adf9d692">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="35008b50-4258-4036-8407-6ad226783eba">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>comment_characteristic_id</ColumnID>
                   </Source>
@@ -474,15 +474,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d816101a-c9fd-4a92-b1c9-c13740d8f23b">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="214db184-bdff-4671-94d4-17c51e266e50">
           <CubeDimensionID>Stay Description</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="2d10677b-7468-46c2-9425-8fdaced90885">
+            <Attribute dwd:design-time-name="b15de135-5326-43ae-bd3d-7f3459308af7">
               <AttributeID>Stay Description Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="0f37e339-56c4-4e66-b04c-8786f457fe7a">
+                <KeyColumn dwd:design-time-name="a9c12a50-241c-4ac3-bca5-653e034bba73">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="22938e4f-1236-4942-a65d-25fa8ccaf2f5">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="17a9daf7-3c66-408d-b3d6-430fb0a133a9">
                     <TableID>dbo_Hotel_Review</TableID>
                     <ColumnID>stay_description_id</ColumnID>
                   </Source>
@@ -493,13 +493,14 @@
           </Attributes>
         </Dimension>
       </Dimensions>
+      <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="68f11e24-c3c1-4587-b5fd-2d4fff85a4ac">
+  <Source dwd:design-time-name="806e172c-75fd-4bf7-b30e-32eabab4b72c">
     <DataSourceViewID>S10523</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript dwd:design-time-name="f2ccc8cb-cc17-4f31-8c3a-c74967bf4879">
+    <MdxScript dwd:design-time-name="5c5caef1-3d11-4a91-8b98-0803ec9fd2a6">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -511,34 +512,38 @@ The CALCULATE command controls the aggregation of leaf cells in the cube.
 If the CALCULATE command is deleted or modified, the data within the cube is affected.
 You should edit this command only if you manually specify how the cube is aggregated.
 */
-CALCULATE; 
+CALCULATE;  
 CREATE MEMBER CURRENTCUBE.[Measures].[Avg Hotel Score]
  AS [Measures].[Numerical Score]/[Measures].[Row Count], 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculations'  ; 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculations';  
 CREATE MEMBER CURRENTCUBE.[Measures].[Calculated Hotel Score]
- AS ([Measures].[Avg Hotel Score]^[Measures].[Avg Hotel Score])*([Measures].[Row Count]^0.5), 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculations'  ; 
+ AS ([Measures].[Avg Hotel Score]^[Measures].[Avg Hotel Score])+([Measures].[Row Count]), 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculations'  ;  
 CREATE DYNAMIC SET CURRENTCUBE.[Couples]
- AS [Stay Description].[Guest Category].&amp;[Couple], DISPLAY_FOLDER = 'Sets'  ; 
+ AS [Stay Description].[Guest Category].&amp;[Couple], DISPLAY_FOLDER = 'Sets';  
 CREATE DYNAMIC SET CURRENTCUBE.[Other Guest Categories]
- AS UNION ([Stay Description].[Guest Category].&amp;[Family with older children],[Stay Description].[Guest Category].&amp;[Family with young children],[Stay Description].[Guest Category].&amp;[Group],[Stay Description].[Guest Category].&amp;[Solo traveler]), DISPLAY_FOLDER = 'Sets'  ;     
+ AS UNION (
+[Stay Description].[Guest Category].&amp;[Family with older children],
+[Stay Description].[Guest Category].&amp;[Family with young children],
+[Stay Description].[Guest Category].&amp;[Group],
+[Stay Description].[Guest Category].&amp;[Solo traveler]
+), DISPLAY_FOLDER = 'Sets'  ;      
 CREATE MEMBER CURRENTCUBE.[Measures].[Review Count Category]
- AS 
-CASE 
+ AS CASE 
 When ([Measures].[Hotel Review Count] &lt;105) 
 THEN "small"
 WHEN ([Measures].[Hotel Review Count] &lt;305) 
 THEN "medium"
-ELSE ("lorge")
+ELSE ("large")
 END, 
 FORMAT_STRING = "Standard", 
-VISIBLE = 1; </Text>
+VISIBLE = 1  ; </Text>
         </Command>
       </Commands>
     </MdxScript>
   </MdxScripts>
   <Kpis>
-    <Kpi dwd:design-time-name="98a6ffa6-7a78-4e14-bc0a-2bfbbfaedb19">
+    <Kpi dwd:design-time-name="fb8e9934-1f0b-409b-8e7b-bb7157a4bbcf">
       <ID>KPI</ID>
       <Name>Ceiling</Name>
       <AssociatedMeasureGroupID>Hotel Review</AssociatedMeasureGroupID>
